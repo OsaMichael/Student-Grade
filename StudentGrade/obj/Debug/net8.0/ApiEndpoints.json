@@ -1,0 +1,49 @@
+[
+  {
+    "ContainingType": "StudentGradeApp.Controllers.StudentGradeController",
+    "Method": "AddGrade",
+    "RelativePath": "api/StudentGrade/AddGrade",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentGrade",
+        "Type": "StudentGradeApp.Models.StudentGradeModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentGradeApp.Controllers.StudentGradeController",
+    "Method": "GetStudents",
+    "RelativePath": "api/StudentGrade/GetStudents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentGrade.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[StudentGrade.WeatherForecast, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
