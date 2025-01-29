@@ -27,8 +27,8 @@ namespace StudentGradeApp.Controllers
                 return RedirectToAction("GetStudents");
             }
             else 
-            { 
-                return BadRequest(result.message);
+            {
+                return UnprocessableEntity(new { result.message });
             }
                 
         }

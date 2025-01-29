@@ -93,11 +93,11 @@
       "StudentGradeModel": {
         "type": "object",
         "properties": {
-          "studentNumber": {
+          "studentName": {
             "type": "string",
             "nullable": true
           },
-          "studentName": {
+          "studentNumber": {
             "type": "string",
             "nullable": true
           },
