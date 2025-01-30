@@ -39,5 +39,19 @@ namespace StudentGradeApp.Controllers
             var res = await _repository.GetStudents();
             return Ok(res);
         }
+
+        [HttpGet("UpdateStudent")]
+        public async Task<IActionResult> UpdateStudent(StudentEditGradeModel model)
+        {
+            var res = await _repository.EditStudent(model);
+            return Ok(res);
+        }
+
+        [HttpGet("getStudentByNumber")]
+        public async Task<IActionResult> GetStudentByNumber(string  studentNumber)
+        {
+            var res = await _repository.GetStudentByNumber(studentNumber);
+            return Ok(res);
+        }
     }
     }

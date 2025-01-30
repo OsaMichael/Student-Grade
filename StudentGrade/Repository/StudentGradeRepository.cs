@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using StudentGradeApp.Controllers;
 using StudentGradeApp.DataContext;
 using StudentGradeApp.Models;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace StudentGradeApp.Repository
 {
@@ -77,5 +78,35 @@ namespace StudentGradeApp.Repository
             return student;
         }
 
+        public async Task<ResponseModel> EditStudent(StudentEditGradeModel model)
+        {
+            var response = new ResponseModel();
+            var res = await _context.Students.FirstOrDefaultAsync(x => x.StudentNumber == model.StudentNumber);
+            if (res != null)
+            {
+                var update = _mapper.Map<StudentEditGradeModel>(res);
+                _context.Update(update);
+              await  _context.SaveChangesAsync();
+                 response.message = "Success";
+            }
+            else
+            {
+                response.message = "Update Fail";
+            }
+
+            return response;
+        }
+
+        public async Task<StudentEditGradeModel> GetStudentByNumber(string number)
+        {
+            var response = new StudentEditGradeModel();
+            var res = await _context.Students.FirstOrDefaultAsync(x=>x.StudentNumber == number);
+            if (res != null)
+            {
+                var result = _mapper.Map<StudentEditGradeModel>(res);
+                response = result;
+            }
+            return response;
+        }
     }
 }

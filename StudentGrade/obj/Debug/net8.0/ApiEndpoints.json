@@ -17,12 +17,44 @@
   },
   {
     "ContainingType": "StudentGradeApp.Controllers.StudentGradeController",
+    "Method": "GetStudentByNumber",
+    "RelativePath": "api/StudentGrade/getStudentByNumber",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentGradeApp.Controllers.StudentGradeController",
     "Method": "GetStudents",
     "RelativePath": "api/StudentGrade/GetStudents",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentGradeApp.Controllers.StudentGradeController",
+    "Method": "UpdateStudent",
+    "RelativePath": "api/StudentGrade/UpdateStudent",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "StudentGradeApp.Models.StudentEditGradeModel",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

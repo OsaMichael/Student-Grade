@@ -1,0 +1,1210 @@
+2025-01-30 09:03:48.304 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/index.html - null null
+2025-01-30 09:03:48.550 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 09:03:48.556 +01:00 [INF] Hosting environment: Development
+2025-01-30 09:03:48.556 +01:00 [INF] Content root path: C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade
+2025-01-30 09:03:48.995 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/index.html - 200 null text/html;charset=utf-8 716.2444ms
+2025-01-30 09:03:49.070 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-30 09:03:49.077 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 5.4994ms
+2025-01-30 09:03:49.277 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/_vs/browserLink - null null
+2025-01-30 09:03:49.332 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/_vs/browserLink - 200 null text/javascript; charset=UTF-8 54.2547ms
+2025-01-30 09:03:49.626 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/v1/swagger.json - null null
+2025-01-30 09:03:49.645 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.4949ms
+2025-01-30 09:04:05.026 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 09:04:05.033 +01:00 [INF] CORS policy execution successful.
+2025-01-30 09:04:05.042 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 09:04:05.072 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 09:04:09.541 +01:00 [INF] Executed DbCommand (42ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 09:04:09.638 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 09:04:09.656 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 4576.2427ms
+2025-01-30 09:04:09.656 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 09:04:09.659 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 4621.2121 ms
+2025-01-30 09:04:09.693 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 4668.941ms
+2025-01-30 09:11:25.340 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 09:11:25.344 +01:00 [INF] CORS policy execution successful.
+2025-01-30 09:11:25.349 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 09:11:25.352 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 10:43:36.550 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 10:43:36.562 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 10:43:36.563 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 5531210.3769ms
+2025-01-30 10:43:36.563 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 10:43:36.563 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 5531215.3640 ms
+2025-01-30 10:43:36.564 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 5531224.6496ms
+2025-01-30 11:44:52.518 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/index.html - null null
+2025-01-30 11:44:52.569 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 11:44:52.625 +01:00 [INF] Hosting environment: Development
+2025-01-30 11:44:52.625 +01:00 [INF] Content root path: C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade
+2025-01-30 11:44:53.078 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/index.html - 200 null text/html;charset=utf-8 583.3941ms
+2025-01-30 11:44:53.098 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-30 11:44:53.110 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 8.1615ms
+2025-01-30 11:44:53.125 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/_vs/browserLink - null null
+2025-01-30 11:44:53.203 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/_vs/browserLink - 200 null text/javascript; charset=UTF-8 79.8864ms
+2025-01-30 11:44:53.315 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/v1/swagger.json - null null
+2025-01-30 11:44:53.331 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.416ms
+2025-01-30 11:45:00.861 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 11:45:00.879 +01:00 [INF] CORS policy execution successful.
+2025-01-30 11:45:00.886 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 11:45:00.909 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 11:45:04.892 +01:00 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 11:45:05.002 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 11:45:05.015 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 4100.6883ms
+2025-01-30 11:45:05.016 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 11:45:05.018 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 4136.2078 ms
+2025-01-30 11:45:05.028 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 4167.8265ms
+2025-01-30 11:45:36.902 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 11:45:36.905 +01:00 [INF] CORS policy execution successful.
+2025-01-30 11:45:36.913 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 11:45:36.914 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 11:45:40.450 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 11:45:40.460 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 11:45:40.461 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 3547.075ms
+2025-01-30 11:45:40.462 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 11:45:40.462 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 3551.0398 ms
+2025-01-30 11:45:40.462 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 3560.5732ms
+2025-01-30 11:46:17.606 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 11:46:17.608 +01:00 [INF] CORS policy execution successful.
+2025-01-30 11:46:17.609 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 11:46:17.609 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 11:46:21.131 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 11:46:21.133 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 11:46:21.133 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 3523.9512ms
+2025-01-30 11:46:21.133 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 11:46:21.134 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 3524.9332 ms
+2025-01-30 11:46:21.134 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 3527.9782ms
+2025-01-30 11:46:50.119 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 11:46:50.123 +01:00 [INF] CORS policy execution successful.
+2025-01-30 11:46:50.123 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 11:46:50.123 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 11:46:53.487 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 11:46:53.489 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 11:46:53.497 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 3373.9888ms
+2025-01-30 11:46:53.498 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 11:46:53.498 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 3374.5400 ms
+2025-01-30 11:46:53.501 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 3385.2924ms
+2025-01-30 11:53:34.882 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 11:53:34.882 +01:00 [INF] CORS policy execution successful.
+2025-01-30 11:53:34.882 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 11:53:34.883 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 13:44:16.657 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 13:44:16.657 +01:00 [INF] CORS policy execution successful.
+2025-01-30 13:44:16.658 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:44:16.658 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 13:44:17.480 +01:00 [INF] Executed DbCommand (823ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 13:44:17.483 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 13:44:17.937 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 13:44:17.938 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 13:44:17.939 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 1280.7585ms
+2025-01-30 13:44:17.939 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 6643056.4677ms
+2025-01-30 13:44:17.939 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:44:17.939 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:44:17.940 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 6643057.1637 ms
+2025-01-30 13:44:17.940 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 1281.4672 ms
+2025-01-30 13:44:17.940 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 6643058.5411ms
+2025-01-30 13:44:17.940 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 1284.2137ms
+2025-01-30 13:44:17.940 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 13:44:17.940 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 13:44:17.940 +01:00 [INF] CORS policy execution successful.
+2025-01-30 13:44:17.940 +01:00 [INF] CORS policy execution successful.
+2025-01-30 13:44:17.941 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:44:17.941 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:44:17.941 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 13:44:17.941 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 13:44:17.942 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:28540/api/studentgrade/AddGrade - null null
+2025-01-30 13:44:17.943 +01:00 [INF] CORS policy execution successful.
+2025-01-30 13:44:18.793 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:28540/api/studentgrade/AddGrade - 204 null null 851.0073ms
+2025-01-30 13:44:18.793 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:28540/api/studentgrade/AddGrade - null null
+2025-01-30 13:44:18.794 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 13:44:18.795 +01:00 [INF] CORS policy execution successful.
+2025-01-30 13:44:18.795 +01:00 [INF] CORS policy execution successful.
+2025-01-30 13:44:18.795 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:44:18.795 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:28540/api/studentgrade/AddGrade - 204 null null 2.3566ms
+2025-01-30 13:44:18.795 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 13:44:18.796 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 13:44:18.797 +01:00 [INF] CORS policy execution successful.
+2025-01-30 13:44:18.797 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:44:18.797 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 13:44:23.698 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 13:44:23.699 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 13:44:23.700 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 13:44:23.702 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 13:44:23.702 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 13:44:23.706 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 13:44:23.708 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 4912.5666ms
+2025-01-30 13:44:23.708 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 4910.9709ms
+2025-01-30 13:44:23.708 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:44:23.708 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:44:23.710 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 5768.7613ms
+2025-01-30 13:44:23.710 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 4914.4079 ms
+2025-01-30 13:44:23.710 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 4912.8595 ms
+2025-01-30 13:44:23.710 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:44:23.710 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 5769.2104 ms
+2025-01-30 13:44:23.710 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 4916.2973ms
+2025-01-30 13:44:23.710 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 4914.2763ms
+2025-01-30 13:44:23.710 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 5769.6632ms
+2025-01-30 13:44:23.710 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 13:44:23.710 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 13:44:23.710 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:28540/api/studentgrade/AddGrade - null null
+2025-01-30 13:44:23.710 +01:00 [INF] CORS policy execution successful.
+2025-01-30 13:44:23.710 +01:00 [INF] CORS policy execution successful.
+2025-01-30 13:44:23.710 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:44:23.710 +01:00 [INF] CORS policy execution successful.
+2025-01-30 13:44:23.710 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:44:23.711 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 13:44:23.710 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 13:44:23.711 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:28540/api/studentgrade/AddGrade - 204 null null 0.5934ms
+2025-01-30 13:44:23.712 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 13:44:23.712 +01:00 [INF] CORS policy execution successful.
+2025-01-30 13:44:23.712 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:44:23.712 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 13:44:34.517 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 13:44:36.969 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 13:44:36.970 +01:00 [INF] CORS policy execution successful.
+2025-01-30 13:44:36.970 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 13:44:36.970 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 13:44:36.971 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 13:44:36.970 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:44:36.971 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 13:44:36.973 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 13:44:36.973 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 13:44:36.977 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 13:44:36.979 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 13:44:37.830 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 14119.0931ms
+2025-01-30 13:44:37.830 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:44:37.830 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 14119.9997 ms
+2025-01-30 13:44:37.831 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 14120.6343ms
+2025-01-30 13:44:37.831 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 19890.0526ms
+2025-01-30 13:44:37.831 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:44:37.831 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 13:44:37.831 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 19890.5101 ms
+2025-01-30 13:44:37.831 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 19891.0981ms
+2025-01-30 13:44:37.831 +01:00 [INF] CORS policy execution successful.
+2025-01-30 13:44:37.832 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:28540/api/studentgrade/AddGrade - application/json 98
+2025-01-30 13:44:37.832 +01:00 [INF] CORS policy execution successful.
+2025-01-30 13:44:37.832 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.AddGrade (StudentGradeApp)'
+2025-01-30 13:44:37.832 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:44:37.833 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 13:44:38.876 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 13:44:38.877 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 13:44:38.879 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 15166.9145ms
+2025-01-30 13:44:38.880 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:44:38.880 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 15168.2075 ms
+2025-01-30 13:44:38.881 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 15168.9885ms
+2025-01-30 13:44:39.090 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 13:44:39.093 +01:00 [INF] CORS policy execution successful.
+2025-01-30 13:44:39.093 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:44:39.093 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 13:44:39.094 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 13:44:39.094 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 13:44:39.097 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 15386.5465ms
+2025-01-30 13:44:39.098 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:44:39.098 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 15388.1490 ms
+2025-01-30 13:44:39.099 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 15388.6352ms
+2025-01-30 13:44:39.936 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 2963.0584ms
+2025-01-30 13:44:39.936 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:44:39.936 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 2965.9317 ms
+2025-01-30 13:44:39.936 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 2967.1977ms
+2025-01-30 13:44:41.040 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 3207.6327ms
+2025-01-30 13:44:41.040 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:44:41.040 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 3209.0538 ms
+2025-01-30 13:44:41.041 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 3209.6132ms
+2025-01-30 13:44:41.041 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 13:44:41.043 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 13:44:41.044 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 1951.1311ms
+2025-01-30 13:44:41.044 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:44:41.045 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 1951.9629 ms
+2025-01-30 13:44:41.045 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 1954.5835ms
+2025-01-30 13:44:41.056 +01:00 [INF] Route matched with {action = "AddGrade", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddGrade(StudentGradeApp.Models.StudentGradeModel) on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 13:44:43.478 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (Size = 5), @__name_1='?' (Size = 7), @__subject_2='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+WHERE "s"."StudentNumber" = @__id_0 AND "s"."StudentName" = @__name_1 AND "s"."Subject" = @__subject_2
+LIMIT 1
+2025-01-30 13:44:46.870 +01:00 [INF] About to assign grade to student:StudentGradeApp.Models.StudentGradeModel
+2025-01-30 13:44:49.385 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 1), @p1='?' (Size = 5), @p2='?' (Size = 7), @p3='?' (Size = 5), @p4='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Students" ("Grade", "Remark", "StudentName", "StudentNumber", "Subject")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2025-01-30 13:44:52.018 +01:00 [INF] Executing RedirectResult, redirecting to /api/StudentGrade/GetStudents.
+2025-01-30 13:44:52.018 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.AddGrade (StudentGradeApp) in 10962.358ms
+2025-01-30 13:44:52.018 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.AddGrade (StudentGradeApp)'
+2025-01-30 13:44:52.019 +01:00 [INF] HTTP POST /api/studentgrade/AddGrade responded 302 in 14186.3049 ms
+2025-01-30 13:44:52.019 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:28540/api/studentgrade/AddGrade - 302 null null 14187.806ms
+2025-01-30 13:44:52.022 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:28540/api/StudentGrade/GetStudents - null null
+2025-01-30 13:44:52.022 +01:00 [INF] CORS policy execution successful.
+2025-01-30 13:44:52.022 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:28540/api/StudentGrade/GetStudents - 204 null null 0.7187ms
+2025-01-30 13:44:52.024 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/StudentGrade/GetStudents - application/json null
+2025-01-30 13:44:52.024 +01:00 [INF] CORS policy execution successful.
+2025-01-30 13:44:52.024 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:44:52.024 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 13:44:54.014 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 13:44:54.015 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 13:44:54.016 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 1991.4204ms
+2025-01-30 13:44:54.016 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:44:54.016 +01:00 [INF] HTTP GET /api/StudentGrade/GetStudents responded 200 in 1992.0043 ms
+2025-01-30 13:44:54.016 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/StudentGrade/GetStudents - 200 null application/json; charset=utf-8 1992.6625ms
+2025-01-30 13:50:49.158 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 13:50:49.160 +01:00 [INF] CORS policy execution successful.
+2025-01-30 13:50:49.160 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:50:49.161 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 13:50:52.281 +01:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 13:50:52.283 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 13:50:52.288 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 3126.0766ms
+2025-01-30 13:50:52.288 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:50:52.288 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 3127.6867 ms
+2025-01-30 13:50:52.290 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 3132.5894ms
+2025-01-30 13:51:20.313 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 13:51:20.313 +01:00 [INF] CORS policy execution successful.
+2025-01-30 13:51:20.314 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:51:20.315 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 13:51:23.455 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 13:51:23.456 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 13:51:23.457 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 3141.7964ms
+2025-01-30 13:51:23.457 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 13:51:23.457 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 3143.4432 ms
+2025-01-30 13:51:23.458 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 3145.2561ms
+2025-01-30 14:06:15.933 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 14:06:15.935 +01:00 [INF] CORS policy execution successful.
+2025-01-30 14:06:15.935 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 14:06:15.935 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 14:06:28.156 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 14:06:28.163 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 14:06:28.164 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 12228.6407ms
+2025-01-30 14:06:28.164 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 14:06:28.164 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 12229.1639 ms
+2025-01-30 14:06:28.165 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 12235.095ms
+2025-01-30 14:06:29.208 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/index.html - null null
+2025-01-30 14:06:29.242 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/index.html - 200 null text/html;charset=utf-8 34.1194ms
+2025-01-30 14:06:29.273 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-30 14:06:29.274 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/_vs/browserLink - null null
+2025-01-30 14:06:29.274 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 1.0664ms
+2025-01-30 14:06:29.309 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.3809ms
+2025-01-30 14:06:29.657 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/v1/swagger.json - null null
+2025-01-30 14:06:29.669 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.8583ms
+2025-01-30 14:14:24.270 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 14:14:24.272 +01:00 [INF] CORS policy execution successful.
+2025-01-30 14:14:24.272 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 14:14:24.284 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 14:14:38.449 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 14:14:43.558 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 14:14:51.738 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 27454.1107ms
+2025-01-30 14:14:51.738 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 14:14:51.739 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 27466.7815 ms
+2025-01-30 14:14:51.739 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 27468.8215ms
+2025-01-30 14:21:57.410 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:28540/api/studentgrade/AddGrade - null null
+2025-01-30 14:21:57.414 +01:00 [INF] CORS policy execution successful.
+2025-01-30 14:21:57.419 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:28540/api/studentgrade/AddGrade - 204 null null 9.1779ms
+2025-01-30 14:21:57.423 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:28540/api/studentgrade/AddGrade - application/json 95
+2025-01-30 14:21:57.424 +01:00 [INF] CORS policy execution successful.
+2025-01-30 14:21:57.424 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.AddGrade (StudentGradeApp)'
+2025-01-30 14:21:57.429 +01:00 [INF] Route matched with {action = "AddGrade", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddGrade(StudentGradeApp.Models.StudentGradeModel) on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 14:22:01.219 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (Size = 7), @__name_1='?' (Size = 7), @__subject_2='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+WHERE "s"."StudentNumber" = @__id_0 AND "s"."StudentName" = @__name_1 AND "s"."Subject" = @__subject_2
+LIMIT 1
+2025-01-30 14:22:02.248 +01:00 [INF] About to assign grade to student:StudentGradeApp.Models.StudentGradeModel
+2025-01-30 14:22:02.868 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 1), @p1='?', @p2='?' (Size = 7), @p3='?' (Size = 7), @p4='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Students" ("Grade", "Remark", "StudentName", "StudentNumber", "Subject")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2025-01-30 14:22:05.316 +01:00 [INF] Executing RedirectResult, redirecting to /api/StudentGrade/GetStudents.
+2025-01-30 14:22:05.316 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.AddGrade (StudentGradeApp) in 7886.863ms
+2025-01-30 14:22:05.317 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.AddGrade (StudentGradeApp)'
+2025-01-30 14:22:05.317 +01:00 [INF] HTTP POST /api/studentgrade/AddGrade responded 302 in 7892.7472 ms
+2025-01-30 14:22:05.317 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:28540/api/studentgrade/AddGrade - 302 null null 7893.9015ms
+2025-01-30 14:22:05.323 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:28540/api/StudentGrade/GetStudents - null null
+2025-01-30 14:22:05.323 +01:00 [INF] CORS policy execution successful.
+2025-01-30 14:22:05.324 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:28540/api/StudentGrade/GetStudents - 204 null null 1.3781ms
+2025-01-30 14:22:05.326 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/StudentGrade/GetStudents - application/json null
+2025-01-30 14:22:05.326 +01:00 [INF] CORS policy execution successful.
+2025-01-30 14:22:05.327 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 14:22:05.327 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 14:22:06.886 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 14:22:06.887 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 14:22:06.888 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 1560.8661ms
+2025-01-30 14:22:06.888 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 14:22:06.888 +01:00 [INF] HTTP GET /api/StudentGrade/GetStudents responded 200 in 1561.7021 ms
+2025-01-30 14:22:06.889 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/StudentGrade/GetStudents - 200 null application/json; charset=utf-8 1562.5487ms
+2025-01-30 14:22:11.026 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 14:22:11.027 +01:00 [INF] CORS policy execution successful.
+2025-01-30 14:22:11.027 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 14:22:11.027 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 14:22:14.497 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 14:22:14.498 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 14:22:14.500 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 3472.3596ms
+2025-01-30 14:22:14.500 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 14:22:14.500 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 3472.7766 ms
+2025-01-30 14:22:14.501 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 3474.6519ms
+2025-01-30 14:22:55.066 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 14:22:55.067 +01:00 [INF] CORS policy execution successful.
+2025-01-30 14:22:55.067 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 14:22:55.068 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 14:23:01.650 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 14:23:01.651 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 14:23:01.653 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 6585.123ms
+2025-01-30 14:23:01.653 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 14:23:01.654 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 6586.5810 ms
+2025-01-30 14:23:01.654 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 6588.2467ms
+2025-01-30 14:23:12.478 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 14:23:12.479 +01:00 [INF] CORS policy execution successful.
+2025-01-30 14:23:12.480 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 14:23:12.480 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 14:23:15.746 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 14:23:15.748 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 14:23:15.749 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 3268.7542ms
+2025-01-30 14:23:15.749 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 14:23:15.749 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 3269.2180 ms
+2025-01-30 14:23:15.753 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 3274.8128ms
+2025-01-30 14:23:55.134 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:28540/api/studentgrade/AddGrade - null null
+2025-01-30 14:23:55.142 +01:00 [INF] CORS policy execution successful.
+2025-01-30 14:23:55.144 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:28540/api/studentgrade/AddGrade - 204 null null 9.2834ms
+2025-01-30 14:23:55.146 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:28540/api/studentgrade/AddGrade - application/json 90
+2025-01-30 14:23:55.146 +01:00 [INF] CORS policy execution successful.
+2025-01-30 14:23:55.146 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.AddGrade (StudentGradeApp)'
+2025-01-30 14:23:55.146 +01:00 [INF] Route matched with {action = "AddGrade", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddGrade(StudentGradeApp.Models.StudentGradeModel) on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 14:24:01.095 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (Size = 6), @__name_1='?' (Size = 3), @__subject_2='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+WHERE "s"."StudentNumber" = @__id_0 AND "s"."StudentName" = @__name_1 AND "s"."Subject" = @__subject_2
+LIMIT 1
+2025-01-30 14:24:06.448 +01:00 [INF] About to assign grade to student:StudentGradeApp.Models.StudentGradeModel
+2025-01-30 14:24:07.576 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 1), @p1='?', @p2='?' (Size = 3), @p3='?' (Size = 6), @p4='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Students" ("Grade", "Remark", "StudentName", "StudentNumber", "Subject")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2025-01-30 14:24:19.966 +01:00 [INF] Executing RedirectResult, redirecting to /api/StudentGrade/GetStudents.
+2025-01-30 14:24:19.966 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.AddGrade (StudentGradeApp) in 24819.4383ms
+2025-01-30 14:24:19.966 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.AddGrade (StudentGradeApp)'
+2025-01-30 14:24:19.966 +01:00 [INF] HTTP POST /api/studentgrade/AddGrade responded 302 in 24820.1029 ms
+2025-01-30 14:24:19.967 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:28540/api/studentgrade/AddGrade - 302 null null 24821.4416ms
+2025-01-30 14:24:19.971 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:28540/api/StudentGrade/GetStudents - null null
+2025-01-30 14:24:19.971 +01:00 [INF] CORS policy execution successful.
+2025-01-30 14:24:19.971 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:28540/api/StudentGrade/GetStudents - 204 null null 0.5413ms
+2025-01-30 14:24:19.973 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/StudentGrade/GetStudents - application/json null
+2025-01-30 14:24:19.973 +01:00 [INF] CORS policy execution successful.
+2025-01-30 14:24:19.973 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 14:24:19.973 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 14:25:00.827 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 14:25:09.079 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 14:25:12.487 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 52513.4631ms
+2025-01-30 14:25:12.487 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 14:25:12.487 +01:00 [INF] HTTP GET /api/StudentGrade/GetStudents responded 200 in 52513.9633 ms
+2025-01-30 14:25:12.487 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/StudentGrade/GetStudents - 200 null application/json; charset=utf-8 52514.6321ms
+2025-01-30 14:25:16.406 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 14:25:16.406 +01:00 [INF] CORS policy execution successful.
+2025-01-30 14:25:16.407 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 14:25:16.407 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 14:25:22.180 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 14:25:22.184 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 14:25:22.185 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 5777.7143ms
+2025-01-30 14:25:22.185 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 14:25:22.185 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 5778.2786 ms
+2025-01-30 14:25:22.186 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 5779.7521ms
+2025-01-30 14:26:27.485 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 14:26:27.486 +01:00 [INF] CORS policy execution successful.
+2025-01-30 14:26:27.487 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 14:26:27.487 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 14:26:48.410 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 14:26:48.411 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 14:26:48.415 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 14:26:48.415 +01:00 [INF] CORS policy execution successful.
+2025-01-30 14:26:48.415 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 14:26:48.415 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 14:26:49.185 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 21697.5824ms
+2025-01-30 14:26:49.185 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 14:26:49.185 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 21698.3494 ms
+2025-01-30 14:26:49.185 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 21699.9465ms
+2025-01-30 14:26:49.188 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 14:26:49.197 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 14:26:49.201 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 785.2553ms
+2025-01-30 14:26:49.201 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 14:26:49.201 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 785.6500 ms
+2025-01-30 14:26:49.201 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 786.2889ms
+2025-01-30 14:27:20.172 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 14:27:20.172 +01:00 [INF] CORS policy execution successful.
+2025-01-30 14:27:20.173 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 14:27:20.173 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 14:27:23.596 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 14:27:23.597 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 14:27:23.600 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 3426.8172ms
+2025-01-30 14:27:23.604 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 14:27:23.604 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 3431.8886 ms
+2025-01-30 14:27:23.606 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 3434.1638ms
+2025-01-30 15:06:03.002 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:06:03.002 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:06:03.002 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:06:03.003 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:17:23.822 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:17:23.823 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:17:23.823 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:17:23.823 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:17:25.450 +01:00 [INF] Executed DbCommand (838ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:17:25.452 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:17:25.457 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:17:25.457 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:17:25.458 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 682454.2791ms
+2025-01-30 15:17:25.458 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:17:25.458 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:17:25.458 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 682455.5675 ms
+2025-01-30 15:17:25.458 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:17:25.458 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 682456.4273ms
+2025-01-30 15:17:25.458 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:17:25.458 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:17:25.459 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:17:26.231 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:17:26.231 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:17:26.231 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:17:26.233 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:17:26.234 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:17:26.234 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:17:26.234 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:17:29.652 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:17:29.654 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:17:29.654 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:17:29.654 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:17:29.655 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:17:29.655 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:17:31.668 +01:00 [INF] Executed DbCommand (2,012ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:17:31.669 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:17:31.670 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:17:31.672 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:17:31.972 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 6513.3995ms
+2025-01-30 15:17:31.972 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 5737.1518ms
+2025-01-30 15:17:31.972 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:17:31.972 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:17:31.972 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 5737.6908 ms
+2025-01-30 15:17:31.972 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 6513.6773 ms
+2025-01-30 15:17:31.972 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 6514.9092ms
+2025-01-30 15:17:31.972 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 5739.2462ms
+2025-01-30 15:17:31.972 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 8149.2966ms
+2025-01-30 15:17:31.972 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:17:31.973 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 8149.7017 ms
+2025-01-30 15:17:31.973 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 5741.2305ms
+2025-01-30 15:17:31.973 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 8150.2605ms
+2025-01-30 15:17:31.973 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:17:31.973 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 5741.7654 ms
+2025-01-30 15:17:31.973 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 6514.1922ms
+2025-01-30 15:17:31.978 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:17:31.980 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:17:31.984 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 2329.8095ms
+2025-01-30 15:17:31.984 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:17:31.984 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 2330.0716 ms
+2025-01-30 15:17:31.984 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 2331.9472ms
+2025-01-30 15:18:41.128 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:18:41.129 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:18:41.129 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:18:41.130 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:18:57.236 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:18:57.236 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:18:57.238 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:18:57.239 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:18:57.240 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:18:57.277 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:18:58.089 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 16958.4208ms
+2025-01-30 15:18:58.089 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:18:58.089 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 16959.9116 ms
+2025-01-30 15:18:58.089 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 16960.9492ms
+2025-01-30 15:18:58.798 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:18:58.804 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:18:58.810 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 1531.803ms
+2025-01-30 15:18:58.810 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:18:58.810 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 1570.3971 ms
+2025-01-30 15:18:58.810 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 1575.5004ms
+2025-01-30 15:19:12.304 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:19:12.305 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:19:12.305 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:19:12.305 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:19:15.750 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:19:15.751 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:19:15.751 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 3446.028ms
+2025-01-30 15:19:15.752 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:19:15.752 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 3446.6696 ms
+2025-01-30 15:19:15.752 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 3447.4351ms
+2025-01-30 15:19:47.321 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:19:47.321 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:19:47.322 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:19:47.322 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:29:02.008 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:29:02.009 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:29:02.018 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:29:02.018 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 554695.7235ms
+2025-01-30 15:29:02.018 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:29:02.018 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 554696.2921 ms
+2025-01-30 15:29:02.019 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 554697.7682ms
+2025-01-30 15:29:02.019 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:29:02.019 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:29:02.019 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:29:02.019 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:29:02.019 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:29:02.019 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:29:02.019 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:29:04.772 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:29:04.772 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:29:04.772 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:29:04.772 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:29:04.780 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:29:07.201 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:29:07.201 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:29:07.201 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:29:07.418 +01:00 [INF] Executed DbCommand (212ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:29:07.420 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:29:07.424 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:29:08.333 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:29:08.333 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:29:08.334 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:29:08.555 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 6535.8214ms
+2025-01-30 15:29:08.555 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:29:08.555 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 6536.1702 ms
+2025-01-30 15:29:08.555 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 6537.6876ms
+2025-01-30 15:29:08.555 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:29:08.556 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:29:08.561 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 3788.9574ms
+2025-01-30 15:29:08.561 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:29:08.562 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 3789.3281 ms
+2025-01-30 15:29:08.561 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 6542.1651ms
+2025-01-30 15:29:08.562 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:29:08.562 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 3790.0951ms
+2025-01-30 15:29:08.562 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 6542.5588 ms
+2025-01-30 15:29:08.562 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 6542.8276ms
+2025-01-30 15:29:08.566 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 1364.2196ms
+2025-01-30 15:29:08.566 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:29:08.566 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 1364.5428 ms
+2025-01-30 15:29:08.566 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 3786.2795ms
+2025-01-30 15:34:35.543 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:34:35.570 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:34:35.570 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:34:35.570 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:34:40.041 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:34:40.042 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:34:40.046 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:34:40.047 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:34:40.047 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:34:40.047 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:34:40.470 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 4899.4796ms
+2025-01-30 15:34:40.470 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:34:40.470 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 4899.9013 ms
+2025-01-30 15:34:40.470 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 4927.5238ms
+2025-01-30 15:34:40.925 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:34:40.926 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:34:40.939 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 892.0902ms
+2025-01-30 15:34:40.939 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:34:40.940 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 892.5583 ms
+2025-01-30 15:34:40.940 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 893.4662ms
+2025-01-30 15:35:04.596 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:35:04.597 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:35:04.597 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:35:04.597 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:35:29.396 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:35:29.401 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:35:29.411 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 24813.787ms
+2025-01-30 15:35:29.411 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:35:29.411 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 24814.4615 ms
+2025-01-30 15:35:29.412 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 24815.8924ms
+2025-01-30 15:36:11.083 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:36:11.084 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:36:11.084 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:36:11.084 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:36:13.998 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:36:14.001 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:36:14.007 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 2922.5554ms
+2025-01-30 15:36:14.007 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:36:14.007 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 2923.3397 ms
+2025-01-30 15:36:14.008 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 2925.0882ms
+2025-01-30 15:39:00.915 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:39:00.918 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:39:00.919 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:39:00.924 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:41:53.102 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:41:53.109 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:41:53.109 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:41:53.110 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:41:53.110 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:41:53.110 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:41:54.945 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 174021.3345ms
+2025-01-30 15:41:54.945 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:41:54.945 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 174026.3636 ms
+2025-01-30 15:41:54.945 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 174030.1967ms
+2025-01-30 15:41:54.946 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:41:54.946 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:41:54.945 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:41:54.946 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:41:54.946 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:41:54.947 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:41:54.950 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 1839.587ms
+2025-01-30 15:41:54.950 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:41:54.950 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 1839.8738 ms
+2025-01-30 15:41:54.950 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 1840.7466ms
+2025-01-30 15:41:54.950 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:41:54.950 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:41:54.950 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:41:54.951 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:41:56.330 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:41:56.331 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:41:56.332 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:41:56.332 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:41:59.114 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:41:59.115 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:41:59.116 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:41:59.117 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:41:59.153 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 4206.3169ms
+2025-01-30 15:42:00.577 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:42:00.580 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 5633.2035 ms
+2025-01-30 15:42:00.580 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 5634.2239ms
+2025-01-30 15:42:00.584 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:42:00.584 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:42:00.590 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 5639.4516ms
+2025-01-30 15:42:00.590 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:42:00.590 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 5639.8994 ms
+2025-01-30 15:42:00.591 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 5640.5333ms
+2025-01-30 15:42:00.591 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 4258.8576ms
+2025-01-30 15:42:00.591 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:42:00.591 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 4259.0859 ms
+2025-01-30 15:42:00.591 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 4262.4207ms
+2025-01-30 15:42:11.002 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:42:11.003 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:42:11.003 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:42:11.003 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:42:17.835 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:42:17.836 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:42:17.837 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 6833.6676ms
+2025-01-30 15:42:17.837 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:42:17.837 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 6834.1324 ms
+2025-01-30 15:42:17.837 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 6834.9987ms
+2025-01-30 15:50:45.232 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:50:45.236 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:50:45.238 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:50:45.238 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:52:44.351 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:52:44.352 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:52:44.352 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:52:44.352 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:52:45.597 +01:00 [INF] Executed DbCommand (622ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:52:45.598 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:52:45.599 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 120360.6428ms
+2025-01-30 15:52:45.599 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:52:45.599 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 120361.0130 ms
+2025-01-30 15:52:45.599 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 120367.7743ms
+2025-01-30 15:52:45.599 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:52:45.599 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:52:45.599 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:52:45.599 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:52:45.599 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:52:45.599 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:52:46.250 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 1898.2513ms
+2025-01-30 15:52:46.251 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:52:46.251 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 1898.7771 ms
+2025-01-30 15:52:46.251 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 1899.3285ms
+2025-01-30 15:52:46.251 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:52:46.251 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:52:46.251 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:52:46.251 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 15:52:54.082 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:52:54.083 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:52:54.089 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 15:52:54.091 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 7839.2526ms
+2025-01-30 15:52:54.091 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:52:54.091 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 7839.5228 ms
+2025-01-30 15:52:54.091 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 15:52:54.091 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 7839.8259ms
+2025-01-30 15:52:54.091 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 8491.5768ms
+2025-01-30 15:52:54.092 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:52:54.092 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 8492.4450 ms
+2025-01-30 15:52:54.092 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 8492.823ms
+2025-01-30 15:53:07.857 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 15:53:07.857 +01:00 [INF] CORS policy execution successful.
+2025-01-30 15:53:07.858 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 15:53:07.858 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 16:00:46.500 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 16:00:46.502 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 16:00:46.538 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 16:00:46.538 +01:00 [INF] CORS policy execution successful.
+2025-01-30 16:00:46.538 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:00:46.539 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 16:00:48.051 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 460193.4032ms
+2025-01-30 16:00:48.077 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:00:48.077 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 460219.5060 ms
+2025-01-30 16:00:48.077 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 460220.6276ms
+2025-01-30 16:00:48.077 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 16:00:48.077 +01:00 [INF] CORS policy execution successful.
+2025-01-30 16:00:48.078 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:00:48.078 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 16:00:48.078 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 16:00:48.078 +01:00 [INF] CORS policy execution successful.
+2025-01-30 16:00:48.078 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:00:48.078 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 16:00:48.431 +01:00 [INF] Executed DbCommand (350ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 16:00:48.432 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 16:00:49.050 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 2511.6214ms
+2025-01-30 16:00:49.050 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:00:49.050 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 2511.9460 ms
+2025-01-30 16:00:49.050 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 2512.5433ms
+2025-01-30 16:00:49.051 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 16:00:49.051 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 16:00:49.280 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 16:00:49.281 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 16:00:49.287 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 1207.5629ms
+2025-01-30 16:00:49.287 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:00:49.287 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 1208.8533 ms
+2025-01-30 16:00:49.287 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 1209.3091ms
+2025-01-30 16:00:49.290 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 1212.0371ms
+2025-01-30 16:00:49.290 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:00:49.290 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 1212.4321 ms
+2025-01-30 16:00:49.290 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 1212.6532ms
+2025-01-30 16:00:54.281 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 16:00:54.281 +01:00 [INF] CORS policy execution successful.
+2025-01-30 16:00:54.281 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:00:54.281 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 16:01:00.407 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 16:01:00.408 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 16:01:00.408 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 6126.8476ms
+2025-01-30 16:01:00.408 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:01:00.408 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 6127.2941 ms
+2025-01-30 16:01:00.409 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 6128.1863ms
+2025-01-30 16:03:50.153 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 16:03:50.153 +01:00 [INF] CORS policy execution successful.
+2025-01-30 16:03:50.153 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:03:50.153 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 16:07:27.437 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 16:07:27.440 +01:00 [INF] CORS policy execution successful.
+2025-01-30 16:07:27.440 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:07:27.440 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 16:07:27.440 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 16:07:27.441 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 16:07:28.404 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 218250.3787ms
+2025-01-30 16:07:28.404 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:07:28.404 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 16:07:28.404 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 218250.8446 ms
+2025-01-30 16:07:28.404 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 218251.3767ms
+2025-01-30 16:07:28.404 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 16:07:28.404 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 16:07:28.405 +01:00 [INF] CORS policy execution successful.
+2025-01-30 16:07:28.405 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:07:28.405 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 16:07:28.649 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 16:07:28.650 +01:00 [INF] CORS policy execution successful.
+2025-01-30 16:07:28.650 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:07:28.650 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 16:07:30.076 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 16:07:30.076 +01:00 [INF] CORS policy execution successful.
+2025-01-30 16:07:30.076 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:07:30.076 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 16:07:30.079 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 2639.2656ms
+2025-01-30 16:07:30.079 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:07:30.080 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 2639.7070 ms
+2025-01-30 16:07:30.080 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 2642.5787ms
+2025-01-30 16:07:30.080 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 16:07:30.081 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 16:07:32.195 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 16:07:32.195 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 16:07:32.585 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 3933.7898ms
+2025-01-30 16:07:32.585 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:07:32.585 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 3934.9479 ms
+2025-01-30 16:07:32.585 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 16:07:32.585 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 3937.7053ms
+2025-01-30 16:07:32.586 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 16:07:32.595 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 2518.549ms
+2025-01-30 16:07:32.595 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:07:32.595 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 4190.0485ms
+2025-01-30 16:07:32.595 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 2518.9815 ms
+2025-01-30 16:07:32.595 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:07:32.595 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 4190.5767 ms
+2025-01-30 16:07:32.595 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 2519.5978ms
+2025-01-30 16:07:32.595 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 4191.053ms
+2025-01-30 16:07:40.831 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 16:07:40.831 +01:00 [INF] CORS policy execution successful.
+2025-01-30 16:07:40.831 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:07:40.832 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 16:07:46.935 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 16:07:46.936 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 16:07:46.936 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 6104.4047ms
+2025-01-30 16:07:46.936 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:07:46.936 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 6104.7232 ms
+2025-01-30 16:07:46.937 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 6105.5266ms
+2025-01-30 16:38:07.591 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 16:38:07.591 +01:00 [INF] CORS policy execution successful.
+2025-01-30 16:38:07.592 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:38:07.593 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 16:38:09.802 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 16:38:09.808 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 16:38:09.809 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 2216.2301ms
+2025-01-30 16:38:09.809 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:38:09.809 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 2217.6062 ms
+2025-01-30 16:38:09.809 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 2218.2053ms
+2025-01-30 16:38:22.626 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 16:38:22.626 +01:00 [INF] CORS policy execution successful.
+2025-01-30 16:38:22.626 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:38:22.626 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 16:38:27.089 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 16:38:27.090 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 16:38:27.091 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 4464.5305ms
+2025-01-30 16:38:27.091 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:38:27.091 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 4465.1035 ms
+2025-01-30 16:38:27.091 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 4465.7645ms
+2025-01-30 16:38:32.589 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 16:38:32.590 +01:00 [INF] CORS policy execution successful.
+2025-01-30 16:38:32.591 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:38:32.592 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 16:38:35.805 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 16:38:35.806 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 16:38:35.807 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 3214.689ms
+2025-01-30 16:38:35.807 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:38:35.807 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 3216.3315 ms
+2025-01-30 16:38:35.810 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 3220.3484ms
+2025-01-30 16:38:47.889 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 16:38:47.889 +01:00 [INF] CORS policy execution successful.
+2025-01-30 16:38:47.889 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:38:47.889 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 16:38:52.672 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 16:38:52.673 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 16:38:52.674 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 4784.3259ms
+2025-01-30 16:38:52.674 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:38:52.674 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 4784.9039 ms
+2025-01-30 16:38:52.674 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 4785.4241ms
+2025-01-30 16:46:26.668 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 16:46:26.669 +01:00 [INF] CORS policy execution successful.
+2025-01-30 16:46:26.670 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:46:26.673 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 16:46:29.586 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 16:46:29.591 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 16:46:29.615 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 2941.5716ms
+2025-01-30 16:46:29.615 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:46:29.615 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 2945.8833 ms
+2025-01-30 16:46:29.616 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 2947.9913ms
+2025-01-30 16:46:34.359 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 16:46:34.359 +01:00 [INF] CORS policy execution successful.
+2025-01-30 16:46:34.360 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:46:34.360 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 16:46:36.466 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 16:46:36.467 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 16:46:36.467 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 2106.5535ms
+2025-01-30 16:46:36.467 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 16:46:36.467 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 2107.3618 ms
+2025-01-30 16:46:36.467 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 2108.4938ms
+2025-01-30 17:03:04.654 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 17:03:04.655 +01:00 [INF] CORS policy execution successful.
+2025-01-30 17:03:04.655 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 17:03:04.655 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 17:03:21.533 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 17:03:21.534 +01:00 [INF] CORS policy execution successful.
+2025-01-30 17:03:21.534 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 17:03:21.539 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 17:03:23.206 +01:00 [INF] Executed DbCommand (867ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 17:03:23.207 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 17:03:23.213 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 17:03:23.217 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 18561.5328ms
+2025-01-30 17:03:23.217 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 17:03:23.217 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 18562.1489 ms
+2025-01-30 17:03:23.217 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 499 null application/json; charset=utf-8 18562.7389ms
+2025-01-30 17:03:23.219 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 17:03:23.227 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 1687.3981ms
+2025-01-30 17:03:23.227 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 17:03:23.227 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 1693.2784 ms
+2025-01-30 17:03:23.227 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 1693.8449ms
+2025-01-30 17:04:37.484 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 17:04:37.484 +01:00 [INF] CORS policy execution successful.
+2025-01-30 17:04:37.485 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 17:04:37.486 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 17:04:41.200 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-30 17:04:41.203 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 17:04:41.207 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 3720.9568ms
+2025-01-30 17:04:41.207 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 17:04:41.207 +01:00 [INF] HTTP GET /api/studentgrade/GetStudents responded 200 in 3722.1858 ms
+2025-01-30 17:04:41.207 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - 200 null application/json; charset=utf-8 3723.683ms
+2025-01-30 21:06:08.565 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/studentgrade/GetStudents - null null
+2025-01-30 21:06:08.565 +01:00 [INF] CORS policy execution successful.
+2025-01-30 21:06:08.565 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-30 21:06:08.565 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 21:14:33.792 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/index.html - null null
+2025-01-30 21:14:33.866 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 21:14:33.868 +01:00 [INF] Hosting environment: Development
+2025-01-30 21:14:33.869 +01:00 [INF] Content root path: C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade
+2025-01-30 21:14:34.188 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/_vs/browserLink - null null
+2025-01-30 21:14:34.217 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/index.html - 200 null text/html;charset=utf-8 403.9181ms
+2025-01-30 21:14:34.225 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-30 21:14:34.246 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 15.1011ms
+2025-01-30 21:14:34.303 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/_vs/browserLink - 200 null text/javascript; charset=UTF-8 115.6316ms
+2025-01-30 21:14:34.461 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/v1/swagger.json - null null
+2025-01-30 21:14:34.488 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.4929ms
+2025-01-30 21:15:20.069 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/StudentGrade/getStudentByNumber?studentNumber=123456 - null null
+2025-01-30 21:15:20.092 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudentByNumber (StudentGradeApp)'
+2025-01-30 21:15:20.144 +01:00 [INF] Route matched with {action = "GetStudentByNumber", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudentByNumber(System.String) on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 21:15:21.528 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudentByNumber (StudentGradeApp) in 1379.9793ms
+2025-01-30 21:15:21.529 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudentByNumber (StudentGradeApp)'
+2025-01-30 21:15:21.531 +01:00 [ERR] HTTP GET /api/StudentGrade/getStudentByNumber responded 500 in 1446.4513 ms
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<Student>.Find' was of type 'string', which does not match the property type of 'int'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues)
+   at StudentGradeApp.Repository.StudentGradeRepository.GetStudentByNumber(String number) in C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\Repository\StudentGradeRepository.cs:line 102
+   at StudentGradeApp.Controllers.StudentGradeController.GetStudentByNumber(String studentNumber) in C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\Controllers\StudentGradeController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-01-30 21:15:21.587 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<Student>.Find' was of type 'string', which does not match the property type of 'int'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues)
+   at StudentGradeApp.Repository.StudentGradeRepository.GetStudentByNumber(String number) in C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\Repository\StudentGradeRepository.cs:line 102
+   at StudentGradeApp.Controllers.StudentGradeController.GetStudentByNumber(String studentNumber) in C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\Controllers\StudentGradeController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-30 21:15:21.608 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/StudentGrade/getStudentByNumber?studentNumber=123456 - 500 null text/plain; charset=utf-8 1539.3652ms
+2025-01-30 21:15:53.955 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/StudentGrade/getStudentByNumber?studentNumber=123456 - null null
+2025-01-30 21:15:53.958 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudentByNumber (StudentGradeApp)'
+2025-01-30 21:15:53.959 +01:00 [INF] Route matched with {action = "GetStudentByNumber", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudentByNumber(System.String) on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 21:16:10.641 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudentByNumber (StudentGradeApp) in 16681.8337ms
+2025-01-30 21:16:10.644 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudentByNumber (StudentGradeApp)'
+2025-01-30 21:16:10.648 +01:00 [ERR] HTTP GET /api/StudentGrade/getStudentByNumber responded 500 in 16689.8913 ms
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<Student>.Find' was of type 'string', which does not match the property type of 'int'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues)
+   at StudentGradeApp.Repository.StudentGradeRepository.GetStudentByNumber(String number) in C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\Repository\StudentGradeRepository.cs:line 102
+   at StudentGradeApp.Controllers.StudentGradeController.GetStudentByNumber(String studentNumber) in C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\Controllers\StudentGradeController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-01-30 21:16:10.656 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<Student>.Find' was of type 'string', which does not match the property type of 'int'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues)
+   at StudentGradeApp.Repository.StudentGradeRepository.GetStudentByNumber(String number) in C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\Repository\StudentGradeRepository.cs:line 102
+   at StudentGradeApp.Controllers.StudentGradeController.GetStudentByNumber(String studentNumber) in C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\Controllers\StudentGradeController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-30 21:16:10.660 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/StudentGrade/getStudentByNumber?studentNumber=123456 - 500 null text/plain; charset=utf-8 16705.4299ms
+2025-01-30 21:18:19.665 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/index.html - null null
+2025-01-30 21:18:19.737 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 21:18:19.860 +01:00 [INF] Hosting environment: Development
+2025-01-30 21:18:19.861 +01:00 [INF] Content root path: C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade
+2025-01-30 21:18:20.589 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/_vs/browserLink - null null
+2025-01-30 21:18:20.591 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/index.html - 200 null text/html;charset=utf-8 941.5164ms
+2025-01-30 21:18:20.611 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-30 21:18:20.626 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 10.9046ms
+2025-01-30 21:18:20.751 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/_vs/browserLink - 200 null text/javascript; charset=UTF-8 161.6693ms
+2025-01-30 21:18:20.836 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/v1/swagger.json - null null
+2025-01-30 21:18:20.899 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 63.5696ms
+2025-01-30 21:18:30.163 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/StudentGrade/getStudentByNumber?studentNumber=123456 - null null
+2025-01-30 21:18:30.184 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudentByNumber (StudentGradeApp)'
+2025-01-30 21:18:30.216 +01:00 [INF] Route matched with {action = "GetStudentByNumber", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudentByNumber(System.String) on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-30 21:18:39.985 +01:00 [INF] Executed DbCommand (22ms) [Parameters=[@__number_0='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+WHERE "s"."StudentNumber" = @__number_0
+LIMIT 1
+2025-01-30 21:18:45.625 +01:00 [INF] Executing OkObjectResult, writing value of type 'StudentGradeApp.Models.StudentEditGradeModel'.
+2025-01-30 21:18:45.637 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudentByNumber (StudentGradeApp) in 15416.8982ms
+2025-01-30 21:18:45.637 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudentByNumber (StudentGradeApp)'
+2025-01-30 21:18:45.639 +01:00 [INF] HTTP GET /api/StudentGrade/getStudentByNumber responded 200 in 15463.3748 ms
+2025-01-30 21:18:45.648 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/StudentGrade/getStudentByNumber?studentNumber=123456 - 200 null application/json; charset=utf-8 15485.1595ms
