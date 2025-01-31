@@ -40,7 +40,7 @@ namespace StudentGradeApp.Controllers
             return Ok(res);
         }
 
-        [HttpGet("UpdateStudent")]
+        [HttpPut("UpdateStudent")]
         public async Task<IActionResult> UpdateStudent(StudentEditGradeModel model)
         {
             var res = await _repository.EditStudent(model);

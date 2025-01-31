@@ -145,10 +145,6 @@
       "StudentEditGradeModel": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
           "studentName": {
             "type": "string",
             "nullable": true

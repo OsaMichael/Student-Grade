@@ -1,0 +1,11 @@
+2025-01-31 08:41:42.973 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/index.html - null null
+2025-01-31 08:41:43.020 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-31 08:41:43.039 +01:00 [INF] Hosting environment: Development
+2025-01-31 08:41:43.039 +01:00 [INF] Content root path: C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade
+2025-01-31 08:41:43.308 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/index.html - 200 null text/html;charset=utf-8 347.8235ms
+2025-01-31 08:41:43.343 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-31 08:41:43.343 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/_vs/browserLink - null null
+2025-01-31 08:41:43.348 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 7.0222ms
+2025-01-31 08:41:43.419 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/_vs/browserLink - 200 null text/javascript; charset=UTF-8 75.7761ms
+2025-01-31 08:41:43.478 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/v1/swagger.json - null null
+2025-01-31 08:41:43.495 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.6768ms
