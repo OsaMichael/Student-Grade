@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Documents\\Visual Studio 2022\\Projects\\StudentGrade\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5FE487D1-C241-46D9-AEE0-AF6AC6EC00D6}|StudentGrade\\StudentGradeApp.csproj|c:\\users\\user\\documents\\visual studio 2022\\projects\\studentgrade\\studentgrade\\repository\\studentgraderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FE487D1-C241-46D9-AEE0-AF6AC6EC00D6}|StudentGrade\\StudentGradeApp.csproj|solutionrelative:studentgrade\\repository\\studentgraderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5FE487D1-C241-46D9-AEE0-AF6AC6EC00D6}|StudentGrade\\StudentGradeApp.csproj|c:\\users\\user\\documents\\visual studio 2022\\projects\\studentgrade\\studentgrade\\controllers\\studentgradecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FE487D1-C241-46D9-AEE0-AF6AC6EC00D6}|StudentGrade\\StudentGradeApp.csproj|solutionrelative:studentgrade\\controllers\\studentgradecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FE487D1-C241-46D9-AEE0-AF6AC6EC00D6}|StudentGrade\\StudentGradeApp.csproj|c:\\users\\user\\documents\\visual studio 2022\\projects\\studentgrade\\studentgrade\\models\\studenteditgrademodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FE487D1-C241-46D9-AEE0-AF6AC6EC00D6}|StudentGrade\\StudentGradeApp.csproj|solutionrelative:studentgrade\\models\\studenteditgrademodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5FE487D1-C241-46D9-AEE0-AF6AC6EC00D6}|StudentGrade\\StudentGradeApp.csproj|c:\\users\\user\\documents\\visual studio 2022\\projects\\studentgrade\\studentgrade\\repository\\studentgraderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FE487D1-C241-46D9-AEE0-AF6AC6EC00D6}|StudentGrade\\StudentGradeApp.csproj|solutionrelative:studentgrade\\repository\\studentgraderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5FE487D1-C241-46D9-AEE0-AF6AC6EC00D6}|StudentGrade\\StudentGradeApp.csproj|c:\\users\\user\\documents\\visual studio 2022\\projects\\studentgrade\\studentgrade\\automapper\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FE487D1-C241-46D9-AEE0-AF6AC6EC00D6}|StudentGrade\\StudentGradeApp.csproj|solutionrelative:studentgrade\\automapper\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FE487D1-C241-46D9-AEE0-AF6AC6EC00D6}|StudentGrade\\StudentGradeApp.csproj|c:\\users\\user\\documents\\visual studio 2022\\projects\\studentgrade\\studentgrade\\models\\studenteditgrademodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FE487D1-C241-46D9-AEE0-AF6AC6EC00D6}|StudentGrade\\StudentGradeApp.csproj|solutionrelative:studentgrade\\models\\studenteditgrademodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5FE487D1-C241-46D9-AEE0-AF6AC6EC00D6}|StudentGrade\\StudentGradeApp.csproj|c:\\users\\user\\documents\\visual studio 2022\\projects\\studentgrade\\studentgrade\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -97,7 +97,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -105,13 +105,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "StudentGradeController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Visual Studio 2022\\Projects\\StudentGrade\\StudentGrade\\Controllers\\StudentGradeController.cs",
               "RelativeDocumentMoniker": "StudentGrade\\Controllers\\StudentGradeController.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\Visual Studio 2022\\Projects\\StudentGrade\\StudentGrade\\Controllers\\StudentGradeController.cs",
               "RelativeToolTip": "StudentGrade\\Controllers\\StudentGradeController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAAC0AAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-25T11:33:36.31Z",
               "EditorCaption": ""
@@ -131,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "StudentEditGradeModel.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Visual Studio 2022\\Projects\\StudentGrade\\StudentGrade\\Models\\StudentEditGradeModel.cs",
               "RelativeDocumentMoniker": "StudentGrade\\Models\\StudentEditGradeModel.cs",
@@ -144,26 +144,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Visual Studio 2022\\Projects\\StudentGrade\\StudentGrade\\AutoMapper\\MappingProfile.cs",
               "RelativeDocumentMoniker": "StudentGrade\\AutoMapper\\MappingProfile.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\Visual Studio 2022\\Projects\\StudentGrade\\StudentGrade\\AutoMapper\\MappingProfile.cs",
               "RelativeToolTip": "StudentGrade\\AutoMapper\\MappingProfile.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBQAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-28T09:48:51.947Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "StudentGradeRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Visual Studio 2022\\Projects\\StudentGrade\\StudentGrade\\Repository\\StudentGradeRepository.cs",
               "RelativeDocumentMoniker": "StudentGrade\\Repository\\StudentGradeRepository.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\Visual Studio 2022\\Projects\\StudentGrade\\StudentGrade\\Repository\\StudentGradeRepository.cs",
               "RelativeToolTip": "StudentGrade\\Repository\\StudentGradeRepository.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAFQAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAAwEoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-25T11:00:54.14Z",
               "EditorCaption": ""
