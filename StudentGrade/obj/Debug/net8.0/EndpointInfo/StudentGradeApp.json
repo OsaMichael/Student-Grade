@@ -49,7 +49,7 @@
       }
     },
     "/api/StudentGrade/UpdateStudent": {
-      "get": {
+      "put": {
         "tags": [
           "StudentGrade"
         ],

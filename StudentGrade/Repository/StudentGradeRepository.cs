@@ -84,8 +84,12 @@ namespace StudentGradeApp.Repository
             var res = await _context.Students.FirstOrDefaultAsync(x => x.StudentNumber == model.StudentNumber);
             if (res != null)
             {
-                var update = _mapper.Map<StudentEditGradeModel>(res);
-                _context.Update(update);
+                res.StudentNumber = model.StudentNumber;
+                res.StudentName = model.StudentName;
+                res.Subject = model.Subject;
+                res.Remark = model.Remark;
+                res.Grade = model.Grade;
+                 _context.Update(res);
               await  _context.SaveChangesAsync();
                  response.message = "Success";
             }

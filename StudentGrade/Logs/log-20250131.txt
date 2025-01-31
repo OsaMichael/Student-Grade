@@ -9,3 +9,114 @@
 2025-01-31 08:41:43.419 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/_vs/browserLink - 200 null text/javascript; charset=UTF-8 75.7761ms
 2025-01-31 08:41:43.478 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/v1/swagger.json - null null
 2025-01-31 08:41:43.495 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.6768ms
+2025-01-31 08:49:36.135 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/index.html - null null
+2025-01-31 08:49:36.171 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-31 08:49:36.189 +01:00 [INF] Hosting environment: Development
+2025-01-31 08:49:36.189 +01:00 [INF] Content root path: C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade
+2025-01-31 08:49:36.479 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/_vs/browserLink - null null
+2025-01-31 08:49:36.481 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/index.html - 200 null text/html;charset=utf-8 355.8247ms
+2025-01-31 08:49:36.489 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-31 08:49:36.495 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 3.9153ms
+2025-01-31 08:49:36.647 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/_vs/browserLink - 200 null text/javascript; charset=UTF-8 167.5175ms
+2025-01-31 08:49:36.758 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/v1/swagger.json - null null
+2025-01-31 08:49:36.786 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 28.4453ms
+2025-01-31 08:50:30.730 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:28540/api/StudentGrade/UpdateStudent - application/json 116
+2025-01-31 08:50:30.751 +01:00 [INF] CORS policy execution failed.
+2025-01-31 08:50:30.754 +01:00 [INF] Request origin http://localhost:28540 does not have permission to access the resource.
+2025-01-31 08:50:30.759 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.UpdateStudent (StudentGradeApp)'
+2025-01-31 08:50:30.794 +01:00 [INF] Route matched with {action = "UpdateStudent", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStudent(StudentGradeApp.Models.StudentEditGradeModel) on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-31 08:50:43.500 +01:00 [INF] Executed DbCommand (42ms) [Parameters=[@__model_StudentNumber_0='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+WHERE "s"."StudentNumber" = @__model_StudentNumber_0
+LIMIT 1
+2025-01-31 08:50:58.308 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.UpdateStudent (StudentGradeApp) in 27508.7623ms
+2025-01-31 08:50:58.312 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.UpdateStudent (StudentGradeApp)'
+2025-01-31 08:50:58.317 +01:00 [ERR] HTTP PUT /api/StudentGrade/UpdateStudent responded 500 in 27560.3770 ms
+System.InvalidOperationException: The entity type 'StudentEditGradeModel' was not found. Ensure that the entity type has been added to the model.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.GetOrCreateEntry(Object entity)
+   at Microsoft.EntityFrameworkCore.DbContext.EntryWithoutDetectChanges[TEntity](TEntity entity)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityState[TEntity](TEntity entity, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.Update[TEntity](TEntity entity)
+   at StudentGradeApp.Repository.StudentGradeRepository.EditStudent(StudentEditGradeModel model) in C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\Repository\StudentGradeRepository.cs:line 88
+   at StudentGradeApp.Controllers.StudentGradeController.UpdateStudent(StudentEditGradeModel model) in C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\Controllers\StudentGradeController.cs:line 46
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-01-31 08:50:58.416 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The entity type 'StudentEditGradeModel' was not found. Ensure that the entity type has been added to the model.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.GetOrCreateEntry(Object entity)
+   at Microsoft.EntityFrameworkCore.DbContext.EntryWithoutDetectChanges[TEntity](TEntity entity)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityState[TEntity](TEntity entity, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.Update[TEntity](TEntity entity)
+   at StudentGradeApp.Repository.StudentGradeRepository.EditStudent(StudentEditGradeModel model) in C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\Repository\StudentGradeRepository.cs:line 88
+   at StudentGradeApp.Controllers.StudentGradeController.UpdateStudent(StudentEditGradeModel model) in C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\Controllers\StudentGradeController.cs:line 46
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-31 08:50:58.432 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:28540/api/StudentGrade/UpdateStudent - 500 null text/plain; charset=utf-8 27702.3249ms
+2025-01-31 08:53:19.084 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/index.html - null null
+2025-01-31 08:53:19.128 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-31 08:53:19.148 +01:00 [INF] Hosting environment: Development
+2025-01-31 08:53:19.148 +01:00 [INF] Content root path: C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade
+2025-01-31 08:53:19.455 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/_vs/browserLink - null null
+2025-01-31 08:53:19.455 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-31 08:53:19.457 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/index.html - 200 null text/html;charset=utf-8 383.1297ms
+2025-01-31 08:53:19.463 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 5.4421ms
+2025-01-31 08:53:19.539 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/_vs/browserLink - 200 null text/javascript; charset=UTF-8 83.3343ms
+2025-01-31 08:53:19.636 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/v1/swagger.json - null null
+2025-01-31 08:53:19.671 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 35.0879ms
+2025-01-31 08:54:01.750 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:28540/api/StudentGrade/UpdateStudent - application/json 120
+2025-01-31 08:54:01.769 +01:00 [INF] CORS policy execution failed.
+2025-01-31 08:54:01.771 +01:00 [INF] Request origin http://localhost:28540 does not have permission to access the resource.
+2025-01-31 08:54:01.775 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.UpdateStudent (StudentGradeApp)'
+2025-01-31 08:54:01.805 +01:00 [INF] Route matched with {action = "UpdateStudent", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStudent(StudentGradeApp.Models.StudentEditGradeModel) on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-31 08:54:10.083 +01:00 [INF] Executed DbCommand (34ms) [Parameters=[@__model_StudentNumber_0='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+WHERE "s"."StudentNumber" = @__model_StudentNumber_0
+LIMIT 1
+2025-01-31 08:54:25.190 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 1), @p1='?' (Size = 4), @p2='?' (Size = 11), @p3='?' (Size = 6), @p4='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Students" SET "Grade" = @p0, "Remark" = @p1, "StudentName" = @p2, "StudentNumber" = @p3, "Subject" = @p4
+WHERE "Id" = @p5
+RETURNING 1;
+2025-01-31 08:54:43.145 +01:00 [INF] Executing OkObjectResult, writing value of type 'StudentGradeApp.Models.ResponseModel'.
+2025-01-31 08:54:43.155 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.UpdateStudent (StudentGradeApp) in 41346.7603ms
+2025-01-31 08:54:43.156 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.UpdateStudent (StudentGradeApp)'
+2025-01-31 08:54:43.158 +01:00 [INF] HTTP PUT /api/StudentGrade/UpdateStudent responded 200 in 41383.5890 ms
+2025-01-31 08:54:43.168 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:28540/api/StudentGrade/UpdateStudent - 200 null application/json; charset=utf-8 41417.4408ms
+2025-01-31 08:55:40.148 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/StudentGrade/GetStudents - null null
+2025-01-31 08:55:40.154 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-31 08:55:40.167 +01:00 [INF] Route matched with {action = "GetStudents", controller = "StudentGrade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudents() on controller StudentGradeApp.Controllers.StudentGradeController (StudentGradeApp).
+2025-01-31 08:55:43.127 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Grade", "s"."Remark", "s"."StudentName", "s"."StudentNumber", "s"."Subject"
+FROM "Students" AS "s"
+2025-01-31 08:55:43.147 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.StudentGradeResponse, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-31 08:55:43.150 +01:00 [INF] Executed action StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp) in 2982.9541ms
+2025-01-31 08:55:43.150 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.StudentGradeController.GetStudents (StudentGradeApp)'
+2025-01-31 08:55:43.150 +01:00 [INF] HTTP GET /api/StudentGrade/GetStudents responded 200 in 2996.2960 ms
+2025-01-31 08:55:43.151 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/StudentGrade/GetStudents - 200 null application/json; charset=utf-8 3030.1386ms

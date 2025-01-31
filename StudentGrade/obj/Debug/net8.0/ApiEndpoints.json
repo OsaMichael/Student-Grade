@@ -45,7 +45,7 @@
     "ContainingType": "StudentGradeApp.Controllers.StudentGradeController",
     "Method": "UpdateStudent",
     "RelativePath": "api/StudentGrade/UpdateStudent",
-    "HttpMethod": "GET",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
