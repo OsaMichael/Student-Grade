@@ -53,5 +53,16 @@ namespace StudentGradeApp.Controllers
             var res = await _repository.GetStudentByNumber(studentNumber);
             return Ok(res);
         }
+
+
+        [HttpDelete("deleteStudent/{studentNumber}")]
+        public async Task<IActionResult> DeleteStudent(string studentNumber)
+        {
+            var res = await _repository.DeleteStudent(studentNumber);
+            return Ok(res);
+        }
+
+        
+
     }
     }

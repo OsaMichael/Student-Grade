@@ -1,5 +1,131 @@
 [
   {
+    "ContainingType": "StudentGradeApp.Controllers.CourseController",
+    "Method": "Course",
+    "RelativePath": "api/Course/AddNewCourse",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "StudentGradeApp.Models.CourseModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentGradeApp.Controllers.CourseController",
+    "Method": "CourseRegistration",
+    "RelativePath": "api/Course/courseRegrd",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "StudentGradeApp.Models.CourseRegistrationModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentGradeApp.Controllers.CourseController",
+    "Method": "GetCourses",
+    "RelativePath": "api/Course/getCourses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentGradeApp.Controllers.CourseController",
+    "Method": "GetRegisterCourses",
+    "RelativePath": "api/Course/getRegisterCourses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentGradeApp.Controllers.StudentController",
+    "Method": "Course",
+    "RelativePath": "api/Student/addNewCourse",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "StudentGradeApp.Models.CourseModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentGradeApp.Controllers.StudentController",
+    "Method": "GetAllStudents",
+    "RelativePath": "api/Student/AllStudents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentGradeApp.Controllers.StudentController",
+    "Method": "RegisterStudent",
+    "RelativePath": "api/Student/RegisterStudent",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "StudentGradeApp.Models.RegisterStudentModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentGradeApp.Controllers.StudentController",
+    "Method": "RemoveStudent",
+    "RelativePath": "api/Student/removeStudent/{studentNumber}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentGradeApp.Controllers.StudentController",
+    "Method": "UpdateStudent",
+    "RelativePath": "api/Student/UpdateStudent",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "StudentGradeApp.Models.UpdateStudentModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "StudentGradeApp.Controllers.StudentGradeController",
     "Method": "AddGrade",
     "RelativePath": "api/StudentGrade/AddGrade",
@@ -10,6 +136,22 @@
       {
         "Name": "studentGrade",
         "Type": "StudentGradeApp.Models.StudentGradeModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentGradeApp.Controllers.StudentGradeController",
+    "Method": "DeleteStudent",
+    "RelativePath": "api/StudentGrade/deleteStudent/{studentNumber}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentNumber",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],

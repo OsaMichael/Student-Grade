@@ -70,6 +70,11 @@ namespace StudentGradeApp.Repository
             var output = await _context.Students.FirstOrDefaultAsync(s => s.StudentNumber == id && s.StudentName == name && s.Subject == subject);
             return output;
         }
+        private async Task<object> GetAccountDetails(string name, DateTime age, string department)
+        {
+            var output = await _context.StudentAccounts.FirstOrDefaultAsync(s => s.StudentFullName == name && s.DateOfBirth == age && s.Department == department );
+            return output;
+        }
 
         public async Task<List<StudentGradeResponse>> GetStudents()
         {
@@ -111,6 +116,272 @@ namespace StudentGradeApp.Repository
                 response = result;
             }
             return response;
+        }
+
+        public async Task<ResponseModel> DeleteStudent(string number)
+        {
+            var response = new ResponseModel();
+            var res = await _context.Students.FirstOrDefaultAsync(x => x.StudentNumber == number);
+            if (res != null)
+            {
+               _context.Students.Remove(res);
+               await _context.SaveChangesAsync();
+
+                response.message = "deleted";
+            }
+            return response;
+        }
+
+        public async Task<ResponseModel> RemoveStudent(string number)
+        {
+            var response = new ResponseModel();
+            var res = await _context.StudentAccounts.FirstOrDefaultAsync(x => x.StudentNumber == number);
+            if (res != null)
+            {
+                _context.StudentAccounts.Remove(res);
+                await _context.SaveChangesAsync();
+
+                response.message = "deleted";
+            }
+            return response;
+        }
+
+        public async Task<ResponseModel> AddNewStudent(RegisterStudentModel model)
+        {
+            var response = new ResponseModel();
+            if (model == null)
+            {
+                var res = new ResponseModel(); res.message = "Value cannot be null";
+                _logger.LogInformation("Request : {Request}", res);
+                return res;
+            }
+            try
+            {
+                // Check if user details already exist
+                var isExist = await GetAccountDetails(model.StudentFullName, model.DateOfBirth,  model.Department);
+                if (isExist == null)
+                {
+                    // auto generate student Number
+
+                    var assignStudentId = await GenerateStudentNumber();
+                    var insert = new StudentAccount 
+                    { 
+                          StudentNumber = assignStudentId,
+                          Address = model.Address,
+                          DateOfBirth = model.DateOfBirth,
+                          Department = model.Department,
+                          Faculty = model.Faculty,
+                          Phone = model.Phone,
+                          State = model.State,
+                          StudentFullName = model.StudentFullName,                                              
+                    };
+                    _logger.LogInformation("About to add new student:{Student}", model);
+
+                    await _context.AddAsync(insert);
+                    var save = await _context.SaveChangesAsync();
+
+                    if (save == 1)
+                    {
+
+                        var resp = response.message = "Successful";
+                        response.message = resp;
+                    }
+                    else { var resp = response.message = "Was not successful"; response.message = resp; }
+
+                }
+                else
+                {
+                    var res = new ResponseModel(); res.message = "Details already exist for this student";
+                    _logger.LogInformation("Request : {Request}", res);
+                    return res;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("{StackTrace} an error has occur: {ex.Message}", ex.StackTrace, ex.Message);
+                throw;
+            }
+            return response;
+        }
+
+        public async Task<string> GenerateStudentNumber()
+        {
+            string prefix = "STU";
+            string lastId = await GetStudentLastStudentId();
+            string numericPart = lastId.Substring(3);
+            int number = int.Parse(numericPart); 
+            number++;
+
+            string studentId = number.ToString("D7");
+
+            return $"{prefix}{studentId}";
+        }
+        private async Task<string> GetStudentLastStudentId()
+        {
+            var lastStudent = await _context.StudentAccounts.OrderByDescending(x => x.StudentNumber).FirstOrDefaultAsync();
+
+            return lastStudent?.StudentNumber ?? "STU0000000";
+        }
+        public async Task<List<StudentResponse>> GetAllStudents()
+        {
+            var res = await _context.StudentAccounts.ToListAsync();
+            var student = _mapper.Map<List<StudentResponse>>(res);
+            return student;
+        }
+
+        public async Task<List<CourseResponse>> GetCourses()
+        {
+            var res = await _context.Courses.ToListAsync();
+            var student = _mapper.Map<List<CourseResponse>>(res);
+            return student;
+        }
+        public async Task<List<StudentCourseResponse>> GetRegisterCourses()
+        {
+            var res = await _context.StudentCourses.ToListAsync();
+            var student = _mapper.Map<List<StudentCourseResponse>>(res);
+            return student;
+        }
+
+        public async Task<ResponseModel> UpdateStudent(UpdateStudentModel model)
+        {
+            var response = new ResponseModel();
+            var res = await _context.StudentAccounts.FirstOrDefaultAsync(x => x.StudentNumber == model.StudentNumber);
+            if (res != null)
+            {
+                res.StudentNumber = model.StudentNumber;
+                res.StudentFullName = model.StudentFullName;
+                res.Phone = model.Phone;
+                res.Address = model.Address;
+                res.State = model.State;
+                res.Faculty = model.Faculty;
+                res.Department = model.Department;
+                res.DateOfBirth = model.DateOfBirth;
+                _context.Update(res);
+                await _context.SaveChangesAsync();
+                response.message = "Success";
+            }
+            else
+            {
+                response.message = "Update Fail";
+            }
+
+            return response;
+        }
+
+        /// courses
+        /// 
+        public async Task<ResponseModel> AddCourse(CourseModel model)
+        {
+            var response = new ResponseModel();
+            if (model == null)
+            {
+                var res = new ResponseModel(); res.message = "Value cannot be null";
+                _logger.LogInformation("Request : {Request}", res);
+                return res;
+            }
+            try
+            {
+                // Check if user details already exist
+                var isExist = await GetCourse(model.CourseName, model.CourseCode);
+                if (isExist == null)
+                {
+                    var course = _mapper.Map<Course>(model);
+                 
+                    _logger.LogInformation("About to add new student:{Student}", model);
+
+                    await _context.AddAsync(course);
+                    var save = await _context.SaveChangesAsync();
+
+                    if (save == 1)
+                    {
+
+                        var resp = response.message = "Successful";
+                        response.message = resp;
+                    }
+                    else { var resp = response.message = "Was not successful"; response.message = resp; }
+
+                }
+                else
+                {
+                    var res = new ResponseModel(); res.message = "Details already exist for this student";
+                    _logger.LogInformation("Request : {Request}", res);
+                    return res;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("{StackTrace} an error has occur: {ex.Message}", ex.StackTrace, ex.Message);
+                throw;
+            }
+            return response;
+        }
+
+        public async Task<ResponseModel> CourseRegistration(CourseRegistrationModel model)
+        {
+            var response = new ResponseModel();
+            if (model == null)
+            {
+                var res = new ResponseModel(); res.message = "Value cannot be null";
+                _logger.LogInformation("Request : {Request}", res);
+                return res;
+            }
+            try
+            {
+                // Check if user details already exist
+                var isExist = await GetRegisteredCourse(model.StudentNumber, model.CourseCode);
+                if (isExist == null)
+                {
+
+                    var reg = new CourseRegistration
+                    {
+                        CourseCode = model.CourseCode,
+                        StudentName = model.StudentNumber,
+                        StudentNumber = model.StudentNumber,
+                        DateOfReg = DateTime.Now
+                    };
+
+                    _logger.LogInformation("About to add new student:{Student}", model);
+
+                    await _context.AddAsync(reg);
+                    var save = await _context.SaveChangesAsync();
+
+                    if (save == 1)
+                    {
+
+                        var resp = response.message = "Successful";
+                        response.message = resp;
+                    }
+                    else { var resp = response.message = "Was not successful"; response.message = resp; }
+
+                }
+                else
+                {
+                    var res = new ResponseModel(); res.message = "Details already exist for this student";
+                    _logger.LogInformation("Request : {Request}", res);
+                    return res;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("{StackTrace} an error has occur: {ex.Message}", ex.StackTrace, ex.Message);
+                throw;
+            }
+            return response;
+        }
+
+        private async Task<object> GetCourse(string name, string code)
+        {
+            var output = await _context.Courses.FirstOrDefaultAsync(s => s.CourseName == name && s.CourseCode  == code);
+            return output;
+        }
+
+        private async Task<object> GetRegisteredCourse(string StudentNumber, string courseCode)
+        {
+            var output = await _context.CourseRegistrations.FirstOrDefaultAsync(s => s.StudentNumber == StudentNumber && s.CourseCode == courseCode);
+            return output;
         }
     }
 }

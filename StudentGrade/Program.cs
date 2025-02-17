@@ -21,6 +21,8 @@ builder.Services.AddDbContext<StudentContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
+
+
 builder.Services.AddControllers();
 builder.Services.AddScoped<IStudentGradeRepository, StudentGradeRepository>();
 builder.Services.AddAutoMapper(typeof(MappingProfile));
@@ -40,6 +42,7 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -49,6 +52,12 @@ if (app.Environment.IsDevelopment())
 app.UseCors("AllowAngularApp");
 app.UseSerilogRequestLogging();
 app.UseAuthorization();
-app.MapControllers();
+
+app.UseRouting();
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();
+});
+//app.MapControllers();
 
 app.Run();
