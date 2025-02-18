@@ -48,7 +48,14 @@ namespace StudentGradeApp.AutoMapper
             .ForMember(s => s.CourseCode, b => b.MapFrom(b => b.CourseCode))
             .ForMember(s => s.CourseName, b => b.MapFrom(b => b.CourseName))
             .ReverseMap();
+
+            CreateMap<RegisteredCourseResponse, CourseRegistration>()
+           .ForMember(s => s.CourseCode, b => b.MapFrom(b => b.CourseCode))
+           .ForMember(s => s.StudentNumber, b => b.MapFrom(b => b.StudentNumber))
+           .ForMember(s => s.StudentName, b => b.MapFrom(b => b.CourseName))
+           .ForMember(s => s.DateOfReg, b => b.MapFrom(b => b.DateOfReg))
+           .ReverseMap();
         }
     }
 }
-
+//

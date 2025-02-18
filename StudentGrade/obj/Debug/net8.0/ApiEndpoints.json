@@ -18,7 +18,7 @@
   {
     "ContainingType": "StudentGradeApp.Controllers.CourseController",
     "Method": "CourseRegistration",
-    "RelativePath": "api/Course/courseRegrd",
+    "RelativePath": "api/Course/CourseRegistration",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -27,6 +27,32 @@
         "Name": "model",
         "Type": "StudentGradeApp.Models.CourseRegistrationModel",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentGradeApp.Controllers.CourseController",
+    "Method": "GetCoursebyStudentNumber",
+    "RelativePath": "api/Course/getAllRegisteredCourses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentGradeApp.Controllers.CourseController",
+    "Method": "GetCoursebyStudentNumber",
+    "RelativePath": "api/Course/getCoursebyStudentNumber",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

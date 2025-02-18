@@ -60,7 +60,19 @@
         }
       }
     },
-    "/api/Course/courseRegrd": {
+    "/api/Course/getAllRegisteredCourses": {
+      "get": {
+        "tags": [
+          "Course"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Course/CourseRegistration": {
       "post": {
         "tags": [
           "Course"
@@ -84,6 +96,27 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Course/getCoursebyStudentNumber": {
+      "get": {
+        "tags": [
+          "Course"
+        ],
+        "parameters": [
+          {
+            "name": "model",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -398,7 +431,7 @@
             "type": "string",
             "nullable": true
           },
-          "studentName": {
+          "courseName": {
             "type": "string",
             "nullable": true
           },

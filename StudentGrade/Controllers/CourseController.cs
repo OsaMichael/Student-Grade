@@ -50,14 +50,22 @@ namespace StudentGradeApp.Controllers
 
         }
 
+        [HttpGet("getAllRegisteredCourses")]
+        public async Task<IActionResult> GetCoursebyStudentNumber()
+        {
+            var result = await _repository.GetAllRegisteredCourses();
+            return Ok(result);
 
-        [HttpPost("courseRegrd")]
+        }
+
+
+        [HttpPost("CourseRegistration")]
         public async Task<IActionResult> CourseRegistration([FromBody] CourseRegistrationModel model)
         {
             var result = await _repository.CourseRegistration(model);
             if (result.message == "Successful")
             {
-                return RedirectToAction("getRegisterCourses");
+                return RedirectToAction("getAllRegisteredCourses");
             }
             else
             {
@@ -65,5 +73,16 @@ namespace StudentGradeApp.Controllers
             }
 
         }
+
+        [HttpGet("getCoursebyStudentNumber")]
+        public async Task<IActionResult> GetCoursebyStudentNumber(string model)
+        {
+            var result = await _repository.GetRegisteredCourseByStudentNumber(model);
+            return Ok(result);
+
+        }
+
+
+       
     }
 }

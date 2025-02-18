@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using StudentGradeApp.Controllers;
 using StudentGradeApp.DataContext;
@@ -337,9 +338,10 @@ namespace StudentGradeApp.Repository
                     var reg = new CourseRegistration
                     {
                         CourseCode = model.CourseCode,
-                        StudentName = model.StudentNumber,
+                        CourseName = model.CourseName,
                         StudentNumber = model.StudentNumber,
-                        DateOfReg = DateTime.Now
+                        DateOfReg = DateTime.Now,
+                        StudentName = ""
                     };
 
                     _logger.LogInformation("About to add new student:{Student}", model);
@@ -383,5 +385,52 @@ namespace StudentGradeApp.Repository
             var output = await _context.CourseRegistrations.FirstOrDefaultAsync(s => s.StudentNumber == StudentNumber && s.CourseCode == courseCode);
             return output;
         }
+
+        public async Task<List<RegisteredCourseResponse>> GetRegisteredCourseByStudentNumber(string StudentNumber)
+        {
+            var output = await _context.CourseRegistrations.FirstOrDefaultAsync(s => s.StudentNumber == StudentNumber);
+            var student = _mapper.Map<List<RegisteredCourseResponse>>(output);
+            return student;
+        }
+        //  var student = _mapper.Map<List<RegisteredCourseResponse>>(res);
+        //public async Task<List<RegisteredCourseResponse>> GetAllRegisteredCourses()
+        //{
+        //    var res = await _context.CourseRegistrations.ToListAsync();
+        //    string year = string.Empty;
+        //    var rr = new RegisteredCourseResponse();
+        //    foreach (var dd in res)
+        //    {
+        //        rr.StudentNumber = dd.StudentNumber;
+        //        rr.CourseCode = dd.CourseCode;
+        //        rr.CourseName = dd.c;
+
+        //        string formattedDate = dd.DateOfReg.ToString("yyyy-MM-dd");
+        //        rr.DateOfReg = formattedDate;
+        //    }
+        
+        //    return rr;
+        //}
+
+        public async Task<List<RegisteredCourseResponse>> GetAllRegisteredCourses()
+        {
+            var res = await _context.CourseRegistrations.ToListAsync();
+            var registeredCourses = new List<RegisteredCourseResponse>(); // Create a list to hold responses
+
+            foreach (var dd in res)
+            {
+                var rr = new RegisteredCourseResponse
+                {
+                    StudentNumber = dd.StudentNumber,
+                    CourseCode = dd.CourseCode,
+                    CourseName = dd.CourseName,  
+                    DateOfReg = dd.DateOfReg.ToString("yyyy-MM-dd") // Formatting date
+                };
+
+                registeredCourses.Add(rr); // Add each course to the list
+            }
+
+            return registeredCourses; // Return the list
+        }
+
     }
 }
