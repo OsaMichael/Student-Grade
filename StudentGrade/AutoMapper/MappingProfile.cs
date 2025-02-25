@@ -42,6 +42,7 @@ namespace StudentGradeApp.AutoMapper
             CreateMap<CourseModel, Course>()
              .ForMember(s => s.CourseCode, b => b.MapFrom(b => b.CourseCode))
              .ForMember(s => s.CourseName, b => b.MapFrom(b => b.CourseName))
+             .ForMember(s => s.CourseUnit, b => b.MapFrom(b => b.CourseUnit))
              .ReverseMap();
 
             CreateMap<CourseResponse, Course>()
@@ -54,6 +55,15 @@ namespace StudentGradeApp.AutoMapper
            .ForMember(s => s.StudentNumber, b => b.MapFrom(b => b.StudentNumber))
            .ForMember(s => s.StudentName, b => b.MapFrom(b => b.CourseName))
            .ForMember(s => s.DateOfReg, b => b.MapFrom(b => b.DateOfReg))
+           .ReverseMap();
+
+
+            CreateMap<PaymentResponse, Payment>()
+           .ForMember(s => s.PaymentDate, b => b.MapFrom(b => b.PaymentDate))
+           .ForMember(s => s.StudentNumber, b => b.MapFrom(b => b.StudentNumber))
+           .ForMember(s => s.TransactionId, b => b.MapFrom(b => b.TransactionId))
+           .ForMember(s => s.Status, b => b.MapFrom(b => b.Status))
+           .ForMember(s => s.PaymentMethod, b => b.MapFrom(b => b.PaymentMethod))
            .ReverseMap();
         }
     }

@@ -54,15 +54,7 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
-            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
             "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Abstractions": {
               "target": "Package",
               "version": "[8.0.0, )"
             },
@@ -94,9 +86,17 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
-            "Microsoft.Extensions.DependencyInjection": {
+            "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[9.0.1, )"
+              "version": "[13.0.3, )"
+            },
+            "Paystack.Net": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            },
+            "PaystackApi": {
+              "target": "Package",
+              "version": "[1.0.18, )"
             },
             "Serilog.AspNetCore": {
               "target": "Package",

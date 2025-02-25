@@ -1,10 +1,3 @@
-C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\obj\Debug\net8.0\StudentGradeApp.csproj.AssemblyReference.cache
-C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\obj\Debug\net8.0\StudentGradeApp.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\obj\Debug\net8.0\StudentGradeApp.AssemblyInfoInputs.cache
-C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\obj\Debug\net8.0\StudentGradeApp.AssemblyInfo.cs
-C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\obj\Debug\net8.0\StudentGradeApp.csproj.CoreCompileInputs.cache
-C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\obj\Debug\net8.0\StudentGradeApp.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\obj\Debug\net8.0\StudentGradeApp.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\appsettings.json
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\StudentGradeApp.staticwebassets.endpoints.json
@@ -13,9 +6,11 @@ C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bi
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\StudentGradeApp.runtimeconfig.json
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\StudentGradeApp.dll
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\StudentGradeApp.pdb
+C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\Humanizer.dll
+C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\IpStack.Net.dll
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -31,8 +26,6 @@ C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bi
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Sqlite.dll
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Sqlite.Design.dll
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\Microsoft.Identity.Client.dll
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
@@ -46,6 +39,9 @@ C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bi
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\PayStack.Net.dll
+C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\PaystackApi.dll
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\Serilog.dll
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\Serilog.AspNetCore.dll
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
@@ -159,6 +155,14 @@ C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bi
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\obj\Debug\net8.0\StudentGradeApp.csproj.AssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\obj\Debug\net8.0\StudentGradeApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\obj\Debug\net8.0\StudentGradeApp.AssemblyInfoInputs.cache
+C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\obj\Debug\net8.0\StudentGradeApp.AssemblyInfo.cs
+C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\obj\Debug\net8.0\StudentGradeApp.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\obj\Debug\net8.0\StudentGradeApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\obj\Debug\net8.0\StudentGradeApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\obj\Debug\net8.0\StudentGradeApp.sourcelink.json
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\obj\Debug\net8.0\scopedcss\bundle\StudentGradeApp.styles.css
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\obj\Debug\net8.0\staticwebassets.development.json
@@ -176,6 +180,3 @@ C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\ob
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\obj\Debug\net8.0\StudentGradeApp.pdb
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\obj\Debug\net8.0\StudentGradeApp.genruntimeconfig.cache
 C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\obj\Debug\net8.0\ref\StudentGradeApp.dll
-C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\AutoMapper.dll
-C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade\obj\Debug\net8.0\StudentGradeApp.sourcelink.json

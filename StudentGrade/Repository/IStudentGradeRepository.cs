@@ -19,5 +19,10 @@ namespace StudentGradeApp.Repository
         public Task<ResponseModel> CourseRegistration(CourseRegistrationModel model);
         public Task<List<RegisteredCourseResponse>> GetRegisteredCourseByStudentNumber(string StudentNumber);
         public Task<List<RegisteredCourseResponse>> GetAllRegisteredCourses();
+        public Task<ResponseModel> Payment(PaymentModel model);
+        public Task<List<PaymentResponse>> GetPaymentHistoryByStudentNumber(string StudentNumber);
+        public Task<List<PaymentResponse>> GetAllPayments();
+
+
     }
 }

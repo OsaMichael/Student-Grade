@@ -12,6 +12,8 @@ namespace StudentGradeApp.DataContext
         public DbSet<Course> Courses { get; set; }
         public DbSet<StudentCourse> StudentCourses { get; set; }
         public DbSet<CourseRegistration> CourseRegistrations { get; set; }
+        public DbSet<Payment> Payments { get; set; }
+        public DbSet<PaystackPayment> PaystackPayments { get; set; }
 
 
 

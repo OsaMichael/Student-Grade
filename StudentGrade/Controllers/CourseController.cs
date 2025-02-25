@@ -32,7 +32,7 @@ namespace StudentGradeApp.Controllers
             var result = await _repository.AddCourse(model);
             if (result.message == "Successful")
             {
-                return RedirectToAction("getCourses");
+                return Ok(result);
             }
             else
             {
@@ -65,7 +65,7 @@ namespace StudentGradeApp.Controllers
             var result = await _repository.CourseRegistration(model);
             if (result.message == "Successful")
             {
-                return RedirectToAction("getAllRegisteredCourses");
+                return Ok(result);
             }
             else
             {

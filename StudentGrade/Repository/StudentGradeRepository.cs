@@ -392,24 +392,7 @@ namespace StudentGradeApp.Repository
             var student = _mapper.Map<List<RegisteredCourseResponse>>(output);
             return student;
         }
-        //  var student = _mapper.Map<List<RegisteredCourseResponse>>(res);
-        //public async Task<List<RegisteredCourseResponse>> GetAllRegisteredCourses()
-        //{
-        //    var res = await _context.CourseRegistrations.ToListAsync();
-        //    string year = string.Empty;
-        //    var rr = new RegisteredCourseResponse();
-        //    foreach (var dd in res)
-        //    {
-        //        rr.StudentNumber = dd.StudentNumber;
-        //        rr.CourseCode = dd.CourseCode;
-        //        rr.CourseName = dd.c;
 
-        //        string formattedDate = dd.DateOfReg.ToString("yyyy-MM-dd");
-        //        rr.DateOfReg = formattedDate;
-        //    }
-        
-        //    return rr;
-        //}
 
         public async Task<List<RegisteredCourseResponse>> GetAllRegisteredCourses()
         {
@@ -432,5 +415,64 @@ namespace StudentGradeApp.Repository
             return registeredCourses; // Return the list
         }
 
+        public async Task<ResponseModel> Payment(PaymentModel model)
+        {
+            var response = new ResponseModel();
+            if (model == null)
+            {
+                var res = new ResponseModel(); res.message = "Value cannot be null";
+                _logger.LogInformation("Request : {Request}", res);
+                return res;
+            }
+            try
+            {
+                // Simulate payment gateway processing (replace with real integration)
+                string transactionId = Guid.NewGuid().ToString();
+                string paymentStatus = "Completed"; // In real-world, check gateway response
+
+                var payment = new Payment
+                {
+                    StudentNumber = model.StudentNumber,
+                    Amount = model.Amount,
+                    PaymentMethod = model.PaymentMethod,
+                    TransactionId = transactionId,
+                    Status = paymentStatus,
+                    PaymentDate = DateTime.UtcNow
+                };
+
+                _context.Payments.Add(payment);
+               var save = await _context.SaveChangesAsync();
+                if (save == 1)
+                {
+
+                    var resp = response.message = "Successful";
+                    response.message = resp;
+                }
+                else { var resp = response.message = "Was not successful"; response.message = resp; }
+                return response;
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("{StackTrace} an error has occur: {ex.Message}", ex.StackTrace, ex.Message);
+                throw;
+            }
+
+        }
+
+        public async Task<List<PaymentResponse>> GetPaymentHistoryByStudentNumber(string StudentNumber)
+        {
+            var output = await _context.Payments.Where(s => s.StudentNumber == StudentNumber).OrderByDescending(p => p.PaymentDate)
+            .ToListAsync();
+            var student = _mapper.Map<List<PaymentResponse>>(output);
+            return student;
+        }
+
+        public async Task<List<PaymentResponse>> GetAllPayments()
+        {
+            var res = await _context.Payments.ToListAsync();
+            var student = _mapper.Map<List<PaymentResponse>>(res);
+            return student;
+        }
     }
 }
