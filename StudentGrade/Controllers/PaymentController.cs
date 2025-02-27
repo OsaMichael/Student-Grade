@@ -87,5 +87,17 @@ namespace StudentGradeApp.Controllers
 
             return BadRequest("Payment verification failed.");
         }
+
+        [HttpGet("getTransactions")]
+        public async Task<IActionResult> GetTransactions()
+        {
+            var response = await _paystackService.GetTransactions();
+            if (response != null)
+            {
+                return Ok(response );
+            }
+
+            return BadRequest(" status failed.");
+        }
     }
 }

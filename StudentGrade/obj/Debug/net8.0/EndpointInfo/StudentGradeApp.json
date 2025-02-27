@@ -242,6 +242,18 @@
         }
       }
     },
+    "/api/Payment/getTransactions": {
+      "get": {
+        "tags": [
+          "Payment"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Student/AllStudents": {
       "get": {
         "tags": [
@@ -585,6 +597,10 @@
       "PaystackPaymentModel": {
         "type": "object",
         "properties": {
+          "studentNumber": {
+            "type": "string",
+            "nullable": true
+          },
           "email": {
             "type": "string",
             "nullable": true
@@ -593,11 +609,11 @@
             "type": "integer",
             "format": "int32"
           },
-          "firstName": {
+          "name": {
             "type": "string",
             "nullable": true
           },
-          "lastName": {
+          "remark": {
             "type": "string",
             "nullable": true
           }

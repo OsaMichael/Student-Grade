@@ -1,7 +1,9 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using PayStack.Net;
 using StudentGradeApp.DataContext;
 using StudentGradeApp.Models;
+using System.Linq;
 using System.Net.Http.Headers;
 using System.Text;
 using static System.Net.WebRequestMethods;
@@ -28,7 +30,7 @@ namespace StudentGradeApp.Repository
 
         public async Task<TransactionInitializeResponse?> InitializePayment(PaystackPaymentModel payment)
         {
-            var url = "https://api.paystack.co/transaction/initialize";
+            //var url = "https://api.paystack.co/transaction/initialize";
 
             TransactionInitializeRequest req = new()
             {
@@ -37,6 +39,7 @@ namespace StudentGradeApp.Repository
                 Reference = Generate().ToString(),
                 Currency = "NGN",
                 CallbackUrl = "http://localhost:28540/payment/verify",
+                 
             };
 
             TransactionInitializeResponse response = paystackApi.Transactions.Initialize(req);
@@ -49,6 +52,8 @@ namespace StudentGradeApp.Repository
                      Email = payment.Email,
                      TrxRef = req.Reference,
                      Name = payment.Name,
+                     StudentNumber = payment.StudentNumber,
+                     Remark = payment.Remark,
                 };
 
                 _context.PaystackPayments.Add(save);
@@ -82,6 +87,36 @@ namespace StudentGradeApp.Repository
             }
          
             return response;
+        }
+
+        public async Task<List<TransactionResponseVM>> GetTransactions()
+        {
+            var result = new List<TransactionResponseVM>();
+                var transaction = await _context.PaystackPayments.Where(x => x.Status == true).ToListAsync();
+            if (transaction != null)
+            {
+                // map it into model 
+                foreach(var itm in transaction)
+                {
+                    TransactionResponseVM res = new()
+                    {
+                        Amount = itm.Amount,
+                        Currency = itm.Currency,
+                        Email = itm.Email,
+                        Name = itm.Name,
+                        TransDate = itm.CreatedAt,
+                        TransReference = itm.TrxRef,
+                        StudentNumber = itm.StudentNumber,
+                        Remark = itm.Remark,
+
+                    };
+                    result.Add(res);
+                }
+                
+            }
+            else { }
+
+            return result;
         }
 
         public static long Generate()
