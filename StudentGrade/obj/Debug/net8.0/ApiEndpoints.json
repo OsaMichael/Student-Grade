@@ -79,6 +79,16 @@
   },
   {
     "ContainingType": "StudentGradeApp.Controllers.PaymentController",
+    "Method": "HandleWebhook1",
+    "RelativePath": "api/Payment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentGradeApp.Controllers.PaymentController",
     "Method": "GetAllPayments",
     "RelativePath": "api/Payment/AllPayments",
     "HttpMethod": "GET",
@@ -159,6 +169,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentGradeApp.Controllers.PaymentController",
+    "Method": "HandleWebhook",
+    "RelativePath": "api/Payment/webhook/paystack",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

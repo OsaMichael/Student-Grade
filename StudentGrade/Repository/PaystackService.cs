@@ -38,7 +38,7 @@ namespace StudentGradeApp.Repository
                 Email = payment.Email,
                 Reference = Generate().ToString(),
                 Currency = "NGN",
-                CallbackUrl = "http://localhost:28540/payment/verify",
+                CallbackUrl = "http://localhost:28540/api/payment/verify",
                  
             };
 

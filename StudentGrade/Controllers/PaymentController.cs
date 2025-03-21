@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using StudentGradeApp.DataContext;
 using StudentGradeApp.Models;
 using StudentGradeApp.Repository;
+using System.Text.Json;
 
 namespace StudentGradeApp.Controllers
 {
@@ -15,11 +16,13 @@ namespace StudentGradeApp.Controllers
         private readonly IStudentGradeRepository _repository;
         private readonly IPaystackService _paystackService;
         private readonly ILogger<CourseController> _logger;
-        public PaymentController(IStudentGradeRepository repository, ILogger<CourseController> logger, IPaystackService paystackService)
+        private readonly string _paystackSecretKey;
+        public PaymentController(IStudentGradeRepository repository, ILogger<CourseController> logger, IPaystackService paystackService, IConfiguration configuration)
         {
             _repository = repository;
             _logger = logger;
             _paystackService = paystackService;
+            _paystackSecretKey = configuration["Paystack:SecretKey"];
         }
 
         // POST: api/Payment/process
@@ -99,5 +102,92 @@ namespace StudentGradeApp.Controllers
 
             return BadRequest(" status failed.");
         }
+
+        [HttpPost]
+        public async Task<IActionResult> HandleWebhook1()
+        {
+            try
+            {
+                using var reader = new StreamReader(Request.Body);
+                var requestBody = await reader.ReadToEndAsync();
+                _logger.LogInformation("Received Paystack Webhook: {RequestBody}", requestBody);
+
+                // Verify signature
+                var paystackSignature = Request.Headers["x-paystack-signature"].FirstOrDefault();
+                var secretKey = _paystackSecretKey; // Store securely in appsettings.json
+
+                using (var hmac = new System.Security.Cryptography.HMACSHA512(System.Text.Encoding.UTF8.GetBytes(secretKey)))
+                {
+                    var hash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(requestBody));
+                    var hashString = BitConverter.ToString(hash).Replace("-", "").ToLower();
+
+                    if (hashString != paystackSignature)
+                    {
+                        _logger.LogWarning("Invalid Paystack Signature");
+                        return Unauthorized("Invalid signature");
+                    }
+                }
+
+                // Deserialize JSON
+                var eventData = JsonSerializer.Deserialize<PaystackWebhookEvent>(requestBody);
+                if (eventData == null)
+                {
+                    return BadRequest("Invalid webhook data");
+                }
+
+                // Handle different event types
+                switch (eventData.@event)
+                {
+                    case "charge.success":
+                        _logger.LogInformation("Payment Successful: {TransactionReference}", eventData.data.reference);
+                        break;
+                    case "transfer.success":
+                        _logger.LogInformation("Transfer Successful: {TransferReference}", eventData.data.reference);
+                        break;
+                    default:
+                        _logger.LogWarning("Unhandled Paystack event: {EventType}", eventData.@event);
+                        break;
+                }
+
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error handling Paystack Webhook");
+                return StatusCode(500, "Internal server error");
+            }
+        }
+
+
+            [HttpPost("webhook/paystack")]
+            public async Task<IActionResult> HandleWebhook()
+            {
+                try
+                {
+                    using var reader = new StreamReader(Request.Body);
+                    var requestBody = await reader.ReadToEndAsync();
+                    _logger.LogInformation("Received Paystack Webhook: {RequestBody}", requestBody);
+
+                    var eventData = JsonSerializer.Deserialize<PaystackWebhookEvent>(requestBody);
+                    if (eventData == null) return BadRequest("Invalid webhook data");
+
+                    if (eventData.@event == "charge.success")
+                    {
+                        _logger.LogInformation("Payment Successful: {TransactionReference}", eventData.data.reference);
+
+                        // TODO: Update database payment status
+
+                        return Ok();
+                    }
+
+                    return BadRequest("Unhandled Paystack event");
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "Error handling Paystack Webhook");
+                    return StatusCode(500, "Internal server error");
+                }
+            }
+
     }
 }

@@ -1,0 +1,167 @@
+2025-03-04 18:02:08.033 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger - null null
+2025-03-04 18:02:08.141 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-04 18:02:08.165 +01:00 [INF] Hosting environment: Development
+2025-03-04 18:02:08.166 +01:00 [INF] Content root path: C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade
+2025-03-04 18:02:09.113 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger - 301 null null 1095.4072ms
+2025-03-04 18:02:09.141 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/index.html - null null
+2025-03-04 18:02:09.425 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/index.html - 200 null text/html;charset=utf-8 283.2846ms
+2025-03-04 18:02:09.435 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-04 18:02:09.453 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/_vs/browserLink - null null
+2025-03-04 18:02:09.459 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/swagger-ui-standalone-preset.js - null null
+2025-03-04 18:02:09.467 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/swagger-ui-bundle.js - null null
+2025-03-04 18:02:09.480 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 32.0167ms
+2025-03-04 18:02:09.482 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/swagger-ui.css - null null
+2025-03-04 18:02:09.516 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-03-04 18:02:09.516 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-03-04 18:02:09.538 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-03-04 18:02:09.555 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/swagger-ui.css - 200 152034 text/css 72.7635ms
+2025-03-04 18:02:09.556 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 96.6129ms
+2025-03-04 18:02:09.713 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 246.3895ms
+2025-03-04 18:02:09.721 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/_vs/browserLink - 200 null text/javascript; charset=UTF-8 270.3994ms
+2025-03-04 18:02:10.113 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/v1/swagger.json - null null
+2025-03-04 18:02:10.139 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/favicon-32x32.png - null null
+2025-03-04 18:02:10.144 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-03-04 18:02:10.145 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/favicon-32x32.png - 200 628 image/png 5.7241ms
+2025-03-04 18:02:10.172 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 59.8989ms
+2025-03-04 18:02:17.730 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:28540/api/payment/initialize - null null
+2025-03-04 18:02:17.742 +01:00 [INF] CORS policy execution successful.
+2025-03-04 18:02:17.746 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:28540/api/payment/initialize - 204 null null 16.2299ms
+2025-03-04 18:02:17.750 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:28540/api/payment/initialize - application/json 143
+2025-03-04 18:02:17.754 +01:00 [INF] CORS policy execution successful.
+2025-03-04 18:02:17.849 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.PaymentController.InitializePayment (StudentGradeApp)'
+2025-03-04 18:02:17.933 +01:00 [INF] Route matched with {action = "InitializePayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitializePayment(StudentGradeApp.Models.PaystackPaymentModel) on controller StudentGradeApp.Controllers.PaymentController (StudentGradeApp).
+2025-03-04 18:02:42.089 +01:00 [INF] Executed DbCommand (103ms) [Parameters=[@p0='?' (Size = 36), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (Size = 3), @p5='?' (Size = 21), @p6='?' (Size = 12), @p7='?' (Size = 14), @p8='?' (DbType = Boolean), @p9='?' (Size = 10), @p10='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PaystackPayments" ("Id", "Amount", "CallbackUrl", "CreatedAt", "Currency", "Email", "Name", "Remark", "Status", "StudentNumber", "TrxRef")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2025-03-04 18:02:47.629 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-04 18:02:47.663 +01:00 [INF] Executed action StudentGradeApp.Controllers.PaymentController.InitializePayment (StudentGradeApp) in 29712.5767ms
+2025-03-04 18:02:47.664 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.PaymentController.InitializePayment (StudentGradeApp)'
+2025-03-04 18:02:47.668 +01:00 [INF] HTTP POST /api/payment/initialize responded 200 in 29904.4821 ms
+2025-03-04 18:02:47.738 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:28540/api/payment/initialize - 200 null application/json; charset=utf-8 29988.531ms
+2025-03-04 18:06:57.254 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/payment/verify?trxref=8426554623&reference=8426554623 - null null
+2025-03-04 18:06:57.313 +01:00 [INF] HTTP GET /payment/verify responded 404 in 7.3779 ms
+2025-03-04 18:06:57.315 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/payment/verify?trxref=8426554623&reference=8426554623 - 404 null null 61.4961ms
+2025-03-04 18:06:57.316 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:28540/payment/verify, Response status code: 404
+2025-03-04 18:07:55.359 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/payment/verify?trxref=8426554623&reference=8426554623 - null null
+2025-03-04 18:07:55.373 +01:00 [INF] HTTP GET /payment/verify responded 404 in 0.1160 ms
+2025-03-04 18:07:55.384 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/payment/verify?trxref=8426554623&reference=8426554623 - 404 null null 25.0481ms
+2025-03-04 18:07:55.384 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:28540/payment/verify, Response status code: 404
+2025-03-04 18:08:20.411 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/Payment/verify/8426554623 - null null
+2025-03-04 18:08:20.416 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.PaymentController.VerifyPayment (StudentGradeApp)'
+2025-03-04 18:08:20.431 +01:00 [INF] Route matched with {action = "VerifyPayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] VerifyPayment(System.String) on controller StudentGradeApp.Controllers.PaymentController (StudentGradeApp).
+2025-03-04 18:08:24.692 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__reference_0='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Amount", "p"."CallbackUrl", "p"."CreatedAt", "p"."Currency", "p"."Email", "p"."Name", "p"."Remark", "p"."Status", "p"."StudentNumber", "p"."TrxRef"
+FROM "PaystackPayments" AS "p"
+WHERE "p"."TrxRef" = @__reference_0
+LIMIT 1
+2025-03-04 18:08:24.712 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@p10='?' (Size = 36), @p0='?' (DbType = Int32), @p1='?', @p2='?' (DbType = DateTime), @p3='?' (Size = 3), @p4='?' (Size = 21), @p5='?' (Size = 12), @p6='?' (Size = 14), @p7='?' (DbType = Boolean), @p8='?' (Size = 10), @p9='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "PaystackPayments" SET "Amount" = @p0, "CallbackUrl" = @p1, "CreatedAt" = @p2, "Currency" = @p3, "Email" = @p4, "Name" = @p5, "Remark" = @p6, "Status" = @p7, "StudentNumber" = @p8, "TrxRef" = @p9
+WHERE "Id" = @p10
+RETURNING 1;
+2025-03-04 18:08:24.719 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[PayStack.Net.TransactionVerifyResponse, PayStack.Net, Version=1.1.1.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-04 18:08:24.760 +01:00 [INF] Executed action StudentGradeApp.Controllers.PaymentController.VerifyPayment (StudentGradeApp) in 4329.041ms
+2025-03-04 18:08:24.760 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.PaymentController.VerifyPayment (StudentGradeApp)'
+2025-03-04 18:08:24.761 +01:00 [INF] HTTP GET /api/Payment/verify/8426554623 responded 200 in 4348.8736 ms
+2025-03-04 18:08:24.762 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/Payment/verify/8426554623 - 200 null application/json; charset=utf-8 4350.5774ms
+2025-03-04 18:08:41.867 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/payment/verify?trxref=8426554623&reference=8426554623 - null null
+2025-03-04 18:08:41.879 +01:00 [INF] HTTP GET /payment/verify responded 404 in 0.1052 ms
+2025-03-04 18:08:41.880 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/payment/verify?trxref=8426554623&reference=8426554623 - 404 null null 12.6698ms
+2025-03-04 18:08:41.880 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:28540/payment/verify, Response status code: 404
+2025-03-04 18:08:59.716 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/payment/getTransactions - null null
+2025-03-04 18:08:59.717 +01:00 [INF] CORS policy execution successful.
+2025-03-04 18:08:59.717 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.PaymentController.GetTransactions (StudentGradeApp)'
+2025-03-04 18:08:59.727 +01:00 [INF] Route matched with {action = "GetTransactions", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTransactions() on controller StudentGradeApp.Controllers.PaymentController (StudentGradeApp).
+2025-03-04 18:08:59.788 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Amount", "p"."CallbackUrl", "p"."CreatedAt", "p"."Currency", "p"."Email", "p"."Name", "p"."Remark", "p"."Status", "p"."StudentNumber", "p"."TrxRef"
+FROM "PaystackPayments" AS "p"
+WHERE "p"."Status"
+2025-03-04 18:08:59.793 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentGradeApp.Models.TransactionResponseVM, StudentGradeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-04 18:08:59.801 +01:00 [INF] Executed action StudentGradeApp.Controllers.PaymentController.GetTransactions (StudentGradeApp) in 73.9678ms
+2025-03-04 18:08:59.802 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.PaymentController.GetTransactions (StudentGradeApp)'
+2025-03-04 18:08:59.802 +01:00 [INF] HTTP GET /api/payment/getTransactions responded 200 in 85.2221 ms
+2025-03-04 18:08:59.805 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/payment/getTransactions - 200 null application/json; charset=utf-8 88.9852ms
+2025-03-04 18:10:43.079 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/index.html - null null
+2025-03-04 18:10:43.111 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/index.html - 200 null text/html;charset=utf-8 31.7474ms
+2025-03-04 18:10:43.246 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-04 18:10:43.247 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 1.3677ms
+2025-03-04 18:10:43.299 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/_vs/browserLink - null null
+2025-03-04 18:10:43.314 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.5741ms
+2025-03-04 18:10:43.938 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/v1/swagger.json - null null
+2025-03-04 18:10:43.976 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 38.8608ms
+2025-03-04 18:13:15.719 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:28540/api/payment/initialize - null null
+2025-03-04 18:13:15.720 +01:00 [INF] CORS policy execution successful.
+2025-03-04 18:13:15.722 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:28540/api/payment/initialize - 204 null null 2.7535ms
+2025-03-04 18:13:15.724 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:28540/api/payment/initialize - application/json 139
+2025-03-04 18:13:15.724 +01:00 [INF] CORS policy execution successful.
+2025-03-04 18:13:15.725 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.PaymentController.InitializePayment (StudentGradeApp)'
+2025-03-04 18:13:15.725 +01:00 [INF] Route matched with {action = "InitializePayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitializePayment(StudentGradeApp.Models.PaystackPaymentModel) on controller StudentGradeApp.Controllers.PaymentController (StudentGradeApp).
+2025-03-04 18:13:16.420 +01:00 [INF] Executed DbCommand (29ms) [Parameters=[@p0='?' (Size = 36), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (Size = 3), @p5='?' (Size = 21), @p6='?' (Size = 13), @p7='?' (Size = 10), @p8='?' (DbType = Boolean), @p9='?' (Size = 10), @p10='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PaystackPayments" ("Id", "Amount", "CallbackUrl", "CreatedAt", "Currency", "Email", "Name", "Remark", "Status", "StudentNumber", "TrxRef")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2025-03-04 18:13:16.421 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-04 18:13:16.422 +01:00 [INF] Executed action StudentGradeApp.Controllers.PaymentController.InitializePayment (StudentGradeApp) in 695.872ms
+2025-03-04 18:13:16.422 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.PaymentController.InitializePayment (StudentGradeApp)'
+2025-03-04 18:13:16.422 +01:00 [INF] HTTP POST /api/payment/initialize responded 200 in 697.3119 ms
+2025-03-04 18:13:16.423 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:28540/api/payment/initialize - 200 null application/json; charset=utf-8 698.6919ms
+2025-03-04 18:14:37.176 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/payment/verify?trxref=5393508444&reference=5393508444 - null null
+2025-03-04 18:14:37.189 +01:00 [INF] HTTP GET /payment/verify responded 404 in 0.0502 ms
+2025-03-04 18:14:37.190 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/payment/verify?trxref=5393508444&reference=5393508444 - 404 null null 14.7026ms
+2025-03-04 18:14:37.190 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:28540/payment/verify, Response status code: 404
+2025-03-04 18:15:17.775 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/Payment/verify/5393508444 - null null
+2025-03-04 18:15:17.775 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.PaymentController.VerifyPayment (StudentGradeApp)'
+2025-03-04 18:15:17.776 +01:00 [INF] Route matched with {action = "VerifyPayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] VerifyPayment(System.String) on controller StudentGradeApp.Controllers.PaymentController (StudentGradeApp).
+2025-03-04 18:15:18.520 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__reference_0='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Amount", "p"."CallbackUrl", "p"."CreatedAt", "p"."Currency", "p"."Email", "p"."Name", "p"."Remark", "p"."Status", "p"."StudentNumber", "p"."TrxRef"
+FROM "PaystackPayments" AS "p"
+WHERE "p"."TrxRef" = @__reference_0
+LIMIT 1
+2025-03-04 18:15:18.524 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@p10='?' (Size = 36), @p0='?' (DbType = Int32), @p1='?', @p2='?' (DbType = DateTime), @p3='?' (Size = 3), @p4='?' (Size = 21), @p5='?' (Size = 13), @p6='?' (Size = 10), @p7='?' (DbType = Boolean), @p8='?' (Size = 10), @p9='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "PaystackPayments" SET "Amount" = @p0, "CallbackUrl" = @p1, "CreatedAt" = @p2, "Currency" = @p3, "Email" = @p4, "Name" = @p5, "Remark" = @p6, "Status" = @p7, "StudentNumber" = @p8, "TrxRef" = @p9
+WHERE "Id" = @p10
+RETURNING 1;
+2025-03-04 18:15:18.528 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[PayStack.Net.TransactionVerifyResponse, PayStack.Net, Version=1.1.1.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-04 18:15:18.530 +01:00 [INF] Executed action StudentGradeApp.Controllers.PaymentController.VerifyPayment (StudentGradeApp) in 753.2607ms
+2025-03-04 18:15:18.530 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.PaymentController.VerifyPayment (StudentGradeApp)'
+2025-03-04 18:15:18.530 +01:00 [INF] HTTP GET /api/Payment/verify/5393508444 responded 200 in 754.4773 ms
+2025-03-04 18:15:18.530 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/Payment/verify/5393508444 - 200 null application/json; charset=utf-8 755.4764ms
+2025-03-04 18:25:00.553 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/index.html - null null
+2025-03-04 18:25:00.637 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-04 18:25:00.661 +01:00 [INF] Hosting environment: Development
+2025-03-04 18:25:00.661 +01:00 [INF] Content root path: C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade
+2025-03-04 18:25:01.162 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-04 18:25:01.194 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 30.0024ms
+2025-03-04 18:25:01.203 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/_vs/browserLink - null null
+2025-03-04 18:25:01.196 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/index.html - 200 null text/html;charset=utf-8 656.7697ms
+2025-03-04 18:25:01.303 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/_vs/browserLink - 200 null text/javascript; charset=UTF-8 99.6572ms
+2025-03-04 18:25:01.375 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/v1/swagger.json - null null
+2025-03-04 18:25:01.440 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 65.4625ms
+2025-03-04 18:27:10.532 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:28540/api/payment/initialize - null null
+2025-03-04 18:27:10.547 +01:00 [INF] CORS policy execution successful.
+2025-03-04 18:27:10.550 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:28540/api/payment/initialize - 204 null null 27.8876ms
+2025-03-04 18:27:10.560 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:28540/api/payment/initialize - application/json 141
+2025-03-04 18:27:10.562 +01:00 [INF] CORS policy execution successful.
+2025-03-04 18:27:10.631 +01:00 [INF] Executing endpoint 'StudentGradeApp.Controllers.PaymentController.InitializePayment (StudentGradeApp)'
+2025-03-04 18:27:10.694 +01:00 [INF] Route matched with {action = "InitializePayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitializePayment(StudentGradeApp.Models.PaystackPaymentModel) on controller StudentGradeApp.Controllers.PaymentController (StudentGradeApp).
+2025-03-04 18:27:15.472 +01:00 [INF] Executed DbCommand (75ms) [Parameters=[@p0='?' (Size = 36), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (Size = 3), @p5='?' (Size = 21), @p6='?' (Size = 14), @p7='?' (Size = 11), @p8='?' (DbType = Boolean), @p9='?' (Size = 10), @p10='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PaystackPayments" ("Id", "Amount", "CallbackUrl", "CreatedAt", "Currency", "Email", "Name", "Remark", "Status", "StudentNumber", "TrxRef")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2025-03-04 18:27:15.526 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-04 18:27:15.554 +01:00 [INF] Executed action StudentGradeApp.Controllers.PaymentController.InitializePayment (StudentGradeApp) in 4846.3383ms
+2025-03-04 18:27:15.555 +01:00 [INF] Executed endpoint 'StudentGradeApp.Controllers.PaymentController.InitializePayment (StudentGradeApp)'
+2025-03-04 18:27:15.559 +01:00 [INF] HTTP POST /api/payment/initialize responded 200 in 4983.8938 ms
+2025-03-04 18:27:15.623 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:28540/api/payment/initialize - 200 null application/json; charset=utf-8 5063.3654ms
+2025-03-04 18:27:44.828 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/api/payment/verify?trxref=1463584527&reference=1463584527 - null null
+2025-03-04 18:27:44.882 +01:00 [INF] HTTP GET /api/payment/verify responded 404 in 9.2475 ms
+2025-03-04 18:27:44.885 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/api/payment/verify?trxref=1463584527&reference=1463584527 - 404 null null 57.571ms
+2025-03-04 18:27:44.886 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:28540/api/payment/verify, Response status code: 404
+2025-03-04 18:38:04.608 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/index.html - null null
+2025-03-04 18:38:04.698 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-04 18:38:04.701 +01:00 [INF] Hosting environment: Development
+2025-03-04 18:38:04.701 +01:00 [INF] Content root path: C:\Users\user\Documents\Visual Studio 2022\Projects\StudentGrade\StudentGrade
+2025-03-04 18:38:05.113 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/index.html - 200 null text/html;charset=utf-8 519.0327ms
+2025-03-04 18:38:05.143 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-04 18:38:05.150 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 5.9644ms
+2025-03-04 18:38:05.172 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/_vs/browserLink - null null
+2025-03-04 18:38:05.244 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/_vs/browserLink - 200 null text/javascript; charset=UTF-8 71.909ms
+2025-03-04 18:38:05.645 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:28540/swagger/v1/swagger.json - null null
+2025-03-04 18:38:05.674 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:28540/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 29.9009ms
