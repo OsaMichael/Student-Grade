@@ -35,12 +35,12 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngularApp", policy =>
-        policy.WithOrigins("https://your-angular-app.vercel.app")
+        policy.WithOrigins("https://student-grade-three.vercel.app")
               // policy.WithOrigins("http://localhost:4200")
               .AllowAnyMethod()
               .AllowAnyHeader());
 });
-//
+//student-grade-three.vercel.app
 
 var app = builder.Build();
 
