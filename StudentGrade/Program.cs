@@ -40,7 +40,6 @@ builder.Services.AddCors(options =>
               .AllowAnyMethod()
               .AllowAnyHeader());
 });
-//student-grade-three.vercel.app
 
 var app = builder.Build();
 
