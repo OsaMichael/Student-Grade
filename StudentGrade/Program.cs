@@ -53,7 +53,7 @@ if (app.Environment.IsDevelopment())
 }
 app.UseCors("AllowAngularApp");
 app.UseSerilogRequestLogging();
-app.UseAuthorization();
+//app.UseAuthorization();
 
 app.UseRouting();
 app.UseEndpoints(endpoints =>
